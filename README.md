@@ -7,7 +7,7 @@ I forked this repo to add syntax highlighting for certain languages. This fork a
 
 Before starting setup your dependencies to make this project work and update with easy.
 
-1. Open the [automate_update.py]() in this project. 
+1. Open the [automate_update.py](https://github.com/MichaelT-178/prism/blob/master/automate_update.py) in this project. 
 
 2. Assign the "path_to_local_project" variable to the path of the project where you want to use this modified prismjs library. Save it when you're done
 
