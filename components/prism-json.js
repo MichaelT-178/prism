@@ -14,6 +14,11 @@ Prism.languages.json = {
 		pattern: /\/\/.*|\/\*[\s\S]*?(?:\*\/|$)/,
 		greedy: true
 	},
+	'json-colon': {
+		pattern: /:/,
+		lookbehind: true,
+		greedy: true
+	},
 	'number': /-?\b\d+(?:\.\d+)?(?:e[+-]?\d+)?\b/i,
 	'punctuation': /[{}[\],]/,
 	'operator': /:/,
