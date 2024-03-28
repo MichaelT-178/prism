@@ -22,4 +22,4 @@ print(c('✅ git push completed successfully', 'green'))
 os.system("python3 automate_project_update.py")
 
 
-time.sleep(1)
+time.sleep(3)
