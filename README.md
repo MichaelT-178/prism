@@ -2,10 +2,22 @@
 
 I forked this repo to add syntax highlighting for certain languages. This fork allows you to have custom highlighting in projects where you aren't pushing node_modules.
 
+
+## Setup
+
+Before starting setup your dependencies to make this project work and update with easy.
+
+1. Open the [automate_update.py]() in this project. 
+
+2. Assign the "path_to_local_project" variable to the path of the project where you want to use this modified prismjs library. Save it when you're done
+
+3. 
+
+
 ## How To Add a Token
 
 1. Go to components/prism-python.js (or whatever language you want to modify)
-2. add your token and save
+2. add your token to the languages file and save.
 3. Go to your project and add the following package.json. If there's already a "dependencies" attribute just add the one line there.
 
 ```json
