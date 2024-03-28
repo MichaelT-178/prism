@@ -17,6 +17,9 @@ Before starting setup your dependencies to make this project work and update wit
 python3 push_updates.py
 ```
 
+4. If you want to do this process manually, see "Push and Update Manually" below.
+
+
 ## How To Add a Token
 
 1. Go to components/prism-python.js (or whatever language you want to modify)
@@ -47,3 +50,6 @@ npm run dev
 ```
 
 7. **Note:** that you have to do steps 4-6 every time you make and commit changes to this repository. This is because your projects node_modules prismjs will need to be updated.
+
+
+## Push and Update Manually
