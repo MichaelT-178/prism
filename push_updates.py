@@ -1,5 +1,6 @@
 import os
 from termcolor import colored as c
+import time
 
 os.system("git add .")
 
@@ -10,7 +11,7 @@ message = input(c("\nWhat's your commit message? : ", 'cyan'))
 
 os.system(f'git commit -m "{message.strip()}"')
 
-print(c('✅ git commit completed successfully', 'green'))
+print(c('✅ git commit completed successfully\n', 'green'))
 
 
 
@@ -20,3 +21,5 @@ print(c('✅ git push completed successfully', 'green'))
 
 os.system("python3 automate_project_update.py")
 
+
+time.sleep(1)
