@@ -19,6 +19,6 @@ os.system("git push")
 
 print(c('✅ git push completed successfully', 'green'))
 
-time.sleep(2)
+time.sleep(1.5)
 
 os.system("python3 no_count_automate_project_update.py")
