@@ -14,29 +14,21 @@ I forked this repo to add syntax highlighting for certain languages
 },
 ```
 
-5. Cd into your project and delete your current prismjs module if you have one 
+4. Delete your current prismjs module in node_modules if you have one.
 
 ```
-cd node_modules
+rm -rf node_modules/prismjs
 ```
 
-```
-rm -rf prismjs
-```
-
-```
-cd ..
-```
-
-6. Run the following command 
+5. Run the following command 
 
 ```
 npm install prismjs@https://github.com/MichaelT-178/prism.git
 ```
 
-7. Run the project after installation.
+6. Run the project after installation.
 ```
 npm run dev
 ```
 
-8. Note that you have to do steps 5-8 every time you make and commit changes to this repository in order for your projects prismjs library to be up to date.
+7. **Note:** that you have to do steps 4-6 every time you make and commit changes to this repository in order for your projects prismjs library to be up to date.
