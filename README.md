@@ -1,6 +1,6 @@
 # MichaelT-178 Comment 
 
-I forked this repo to add syntax highlighting for certain languages 
+I forked this repo to add syntax highlighting for certain languages. This fork allows you to have custom highlighting in projects where you aren't pushing node_modules.
 
 ## How To Add a Token
 
@@ -31,4 +31,4 @@ npm install prismjs@https://github.com/MichaelT-178/prism.git
 npm run dev
 ```
 
-7. **Note:** that you have to do steps 4-6 every time you make and commit changes to this repository in order for your projects prismjs library to be up to date.
+7. **Note:** that you have to do steps 4-6 every time you make and commit changes to this repository. This is because your projects node_modules prismjs will need to be updated.
