@@ -24,6 +24,10 @@ cd node_modules
 rm -rf prismjs
 ```
 
+```
+cd ..
+```
+
 6. Run the following command 
 
 ```
