@@ -27,6 +27,11 @@
 			lookbehind: true,
 			greedy: true
 		},
+		'primitive-type': {
+			pattern: /int/,
+			lookbehind: true,
+			greedy: true
+		},
 		'class-name': [
 			className,
 			{
