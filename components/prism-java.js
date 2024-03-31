@@ -27,7 +27,7 @@
 			greedy: true
 		},
 		'primitive-type': {
-			pattern: /\b(?:boolean|int)\b/,
+			pattern: /int/,
 			lookbehind: true,
 			greedy: true
 		},
