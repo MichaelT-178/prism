@@ -26,6 +26,11 @@
 			lookbehind: true,
 			greedy: true
 		},
+		'primitive-type': {
+			pattern: /\b(?:boolean|int)\b/,
+			lookbehind: true,
+			greedy: true
+		},
 		'class-name': [
 			className,
 			{
