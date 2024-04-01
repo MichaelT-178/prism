@@ -1,6 +1,22 @@
 import os
+import pyautogui
 from termcolor import colored as c
 import time
+
+def save_all_changes_in_files():
+    """
+    Saves all changed unsaved files in folder.
+    command + option + s
+    """
+    pyautogui.keyDown('command')
+    pyautogui.keyDown('option')
+    pyautogui.press('s')
+    pyautogui.keyUp('option')
+    pyautogui.keyUp('command')
+
+    print(c("All files with changes saved successfully!\n", 'green'))
+
+save_all_changes_in_files()
 
 os.system("git add .")
 
