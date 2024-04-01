@@ -5,11 +5,11 @@ Prism.languages.python = {
         greedy: true
     },
     'always-blue': {
-        pattern: /\bor\b|add_car|append\(|\.remove\(|\.join\(|Car\(|\.remove_car_by_id\(|main\(/,
+        pattern: /(\badd_car\b|\bappend\(|\.remove\(|\.join\(|\bCar\(|\.remove_car_by_id\(|\bmain\(\))/,
         alias: 'blue'
     },
     'self-orange': {
-        pattern: /\(self/,
+        pattern: /self/,
         alias: 'orange'
     },
     'self-red': {
@@ -17,7 +17,7 @@ Prism.languages.python = {
         alias: 'red'
     },
     'teal-highlight': {
-        pattern: /ValueError\(|__str__|__len__/,
+        pattern: /ValueError\(|__str__|__len__|__init__/,
         alias: 'teal'
     },
     'comment': {
