@@ -28,7 +28,7 @@ async def run_npm_install():
     os.system("rm -rf node_modules/prismjs")
 
     print(c('\nSuccessfully deleted the outdated prismjs library in your project!', 'green'))
-    print(c('\nDownloading new prismjs library in your project. This will probably take 30-50 seconds...', 'blue'))
+    print(c('\nDownloading new prismjs library in your project. This will probably take 50-100 seconds...', 'blue'))
     
 
     process = await asyncio.create_subprocess_exec(
