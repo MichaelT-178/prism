@@ -13,7 +13,7 @@ Prism.languages.python = {
         alias: 'orange'
     },
     'self-red': {
-        pattern: /\b(self)\.(\w+)\b/,
+        pattern: /(?<=self)\.string|(?<=\.)id\b/,
         alias: 'red'
     },    
     'teal-highlight': {

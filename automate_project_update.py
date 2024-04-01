@@ -18,7 +18,7 @@ async def count_to_seventy(stop_event: asyncio.Event):
 
         await asyncio.sleep(1)
 
-        if i > 70:  # Prevent it from counting indefinitely
+        if i > 90:  # Prevent it from counting indefinitely
             break
 
 async def run_npm_install():
