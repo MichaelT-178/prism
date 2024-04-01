@@ -5,7 +5,7 @@ Prism.languages.python = {
         greedy: true
     },
     'always-blue': {
-        pattern: /(\badd_car\b|\bappend\(|\.remove\(|\.join\(|\bCar\(|\.remove_car_by_id\(|\bmain\(\))/,
+        pattern: /(\badd_car\b|\bappend\(|\.remove\(|\.join\(|\bCar\(|\.remove_car_by_id|\bmain\(\))/,
         alias: 'blue'
     },
     'self-orange': {
@@ -13,7 +13,7 @@ Prism.languages.python = {
         alias: 'orange'
     },
     'self-red': {
-        pattern: /self\.\w+\s*(?:=\s*\w+)?/,
+        pattern: / self\.\w+\s*(?:=\s*\w+)?/,
         alias: 'red'
     },
     'teal-highlight': {
