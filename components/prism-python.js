@@ -1,23 +1,19 @@
 Prism.languages.python = {
-    // 'always-gray': {
-    //     pattern: /[\.\(\)]/,
-    //     lookbehind: true,
-    //     greedy: true
-    // },
+    'always-gray': {
+        pattern: /\.id/,
+        lookbehind: true,
+        greedy: true
+    },
     'always-blue': {
-        pattern: /(\badd_car\b|\bappend\(|\.remove\(|\.join\(|\bCar\(|\.remove_car_by_id|\bmain\(\))/,
+        pattern: /(\badd_car\b|\bappend\(|\.remove|\.join|\bCar\(|\.remove_car_by_id|\bmain)/,
         alias: 'blue'
     },
     'self-orange': {
         pattern: /self/,
         alias: 'orange'
     },
-    'self-red': {
-        pattern: / self\.\w+\s*(?:=\s*\w+)?/,
-        alias: 'red'
-    },
     'teal-highlight': {
-        pattern: /ValueError\(|__str__|__len__|__init__/,
+        pattern: /ValueError|__str__|__len__|__init__/,
         alias: 'teal'
     },
     'comment': {
