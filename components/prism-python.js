@@ -9,9 +9,13 @@ Prism.languages.python = {
         alias: 'blue'
     },
     'self-orange': {
-        pattern: /self/,
+        pattern: /\(self/,
         alias: 'orange'
     },
+    'self-red': {
+        pattern: /(?<=self)\.string|(?<=\.)id\b/,
+        alias: 'red'
+    },    
     'teal-highlight': {
         pattern: /ValueError|__str__|__len__|__init__/,
         alias: 'teal'
