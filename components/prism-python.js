@@ -1,9 +1,9 @@
 Prism.languages.python = {
-    'always-gray': {
-        pattern: /[\.\(\)]/,
-        lookbehind: true,
-        greedy: true
-    },
+    // 'always-gray': {
+    //     pattern: /[\.\(\)]/,
+    //     lookbehind: true,
+    //     greedy: true
+    // },
     'always-blue': {
         pattern: /(\badd_car\b|\bappend\(|\.remove\(|\.join\(|\bCar\(|\.remove_car_by_id|\bmain\(\))/,
         alias: 'blue'
