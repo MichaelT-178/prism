@@ -5,6 +5,30 @@ Prism.languages.swift = {
 		lookbehind: true,
 		greedy: true
 	},
+	'swift-white': {
+		// Nested comments are supported up to 2 levels
+		pattern: /(\(\)|\{\}|:|\.|Menuitem|menuItem\.destination|menuItem\.text)/,
+		lookbehind: true,
+		greedy: true
+	},
+	'swift-purple': {
+		// Nested comments are supported up to 2 levels
+		pattern: /menu(?=\))|destination|icon|systemName|foregroundColor/,
+		lookbehind: true,
+		greedy: true
+	},
+	'swift-green': {
+		// Nested comments are supported up to 2 levels
+		pattern: /picture|shakyPaleRed/,
+		lookbehind: true,
+		greedy: true
+	},
+	'swift-pink': {
+		// Nested comments are supported up to 2 levels
+		pattern: /in/,
+		lookbehind: true,
+		greedy: true
+	},
 	'string-literal': [
 		// https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html
 		{
@@ -132,7 +156,7 @@ Prism.languages.swift = {
 	'number': /\b(?:[\d_]+(?:\.[\de_]+)?|0x[a-f0-9_]+(?:\.[a-f0-9p_]+)?|0b[01_]+|0o[0-7_]+)\b/i,
 
 	// A class name must start with an upper-case letter and be either 1 letter long or contain a lower-case letter.
-	'class-name': /\b[A-Z](?:[A-Z_\d]*[a-z]\w*)?\b/,
+	'swift-class-name': /\b[A-Z](?:[A-Z_\d]*[a-z]\w*)?\b/,
 	'function': /\b[a-z_]\w*(?=\s*\()/i,
 	'constant': /\b(?:[A-Z_]{2,}|k[A-Z][A-Za-z_]+)\b/,
 
