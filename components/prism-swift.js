@@ -6,13 +6,13 @@ Prism.languages.swift = {
 		greedy: true
 	},
 	'swift-white': {
-		pattern: /(menuItem|menuItem\.destination|menuItem\.text|\(\)|\{\}|\.)/,
+		pattern: /( menuItem|menuItem\.destination|menuItem\.text|\(\)|\{\}|\.)/,
 		lookbehind: true,
 		greedy: true
 	},
 	'swift-purple': {
 		// Nested comments are supported up to 2 levels
-		pattern: /menu(?=\))|destination|icon|systemName|foregroundColor/,
+		pattern: /menu(?=\))|destination(?=:)|icon|systemName|foregroundColor/,
 		lookbehind: true,
 		greedy: true
 	},
@@ -155,8 +155,8 @@ Prism.languages.swift = {
 	'number': /\b(?:[\d_]+(?:\.[\de_]+)?|0x[a-f0-9_]+(?:\.[a-f0-9p_]+)?|0b[01_]+|0o[0-7_]+)\b/i,
 
 	// A class name must start with an upper-case letter and be either 1 letter long or contain a lower-case letter.
-	'swift-class-name': /\b[A-Z](?:[A-Z_\d]*[a-z]\w*)?(?=k\))\b/,
-	// 'function': /\b[a-z_]\w*(?=\s*\()/i,
+	'swift-class-name': /\b[A-Z](?:[A-Z_\d]*[a-z]\w*)?\b|k(?=\))/,
+	'function': /\b[a-z_]\w*(?=\s*\()/i,
 	'constant': /\b(?:[A-Z_]{2,}|k[A-Z][A-Za-z_]+)\b/,
 
 	// Operators are generic in Swift. Developers can even create new operators (e.g. +++).
