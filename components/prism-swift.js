@@ -5,14 +5,14 @@ Prism.languages.swift = {
 		lookbehind: true,
 		greedy: true
 	},
-	'swift-white': {
-		pattern: /\b(menuItem|destination|text)\b/,
-		greedy: true
-	},
 	'swift-purple': {
 		// Nested comments are supported up to 2 levels
 		pattern: /menu(?=\))|destination(?=:)|icon|systemName|foregroundColor/,
 		lookbehind: true,
+		greedy: true
+	},
+	'swift-white': {
+		pattern: /\b(menuItem|destination|text)\b/,
 		greedy: true
 	},
 	'swift-green': {
