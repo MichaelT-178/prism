@@ -11,13 +11,19 @@ Prism.languages.swift = {
 		lookbehind: true,
 		greedy: true
 	},
+	'swift-teal': {
+		// Nested comments are supported up to 2 levels
+		pattern: /name(?=:)|unwrappedName|ternaryEquivalent/,
+		lookbehind: true,
+		greedy: true
+	},
 	'swift-white': {
 		pattern: /\b(menuItem|destination|text)\b/,
 		greedy: true
 	},
 	'swift-green': {
 		// Nested comments are supported up to 2 levels
-		pattern: /picture|shakyPaleRed/,
+		pattern: /picture|shakyPaleRed|name/,
 		lookbehind: true,
 		greedy: true
 	},
@@ -54,7 +60,7 @@ Prism.languages.swift = {
 					alias: 'punctuation'
 				},
 				'punctuation': /\\(?=[\r\n])/,
-				'string': /[\s\S]+/
+				'swift-string': /[\s\S]+/
 			}
 		},
 		{
@@ -81,7 +87,7 @@ Prism.languages.swift = {
 					pattern: /^\)|\\#+\($/,
 					alias: 'punctuation'
 				},
-				'string': /[\s\S]+/
+				'swift-string': /[\s\S]+/
 			}
 		},
 	],
@@ -139,9 +145,9 @@ Prism.languages.swift = {
 		alias: 'important'
 	},
 
-	'keyword': /\b(?:Any|Protocol|Self|Type|actor|as|assignment|associatedtype|associativity|async|await|break|case|catch|class|continue|convenience|default|defer|deinit|didSet|do|dynamic|else|enum|extension|fallthrough|fileprivate|final|for|func|get|guard|higherThan|if|import|in|indirect|infix|init|inout|internal|is|isolated|lazy|left|let|lowerThan|mutating|none|nonisolated|nonmutating|open|operator|optional|override|postfix|precedencegroup|prefix|private|protocol|public|repeat|required|rethrows|return|right|safe|self|set|some|static|struct|subscript|super|switch|throw|throws|try|typealias|unowned|unsafe|var|weak|where|while|willSet)\b/,
+	'swift-keyword': /\b(?:Any|Protocol|Self|Type|actor|as|assignment|associatedtype|associativity|async|await|break|case|catch|class|continue|convenience|default|defer|deinit|didSet|do|dynamic|else|enum|extension|fallthrough|fileprivate|final|for|func|get|guard|higherThan|if|import|in|indirect|infix|init|inout|internal|is|isolated|lazy|left|let|lowerThan|mutating|none|nonisolated|nonmutating|open|operator|optional|override|postfix|precedencegroup|prefix|private|protocol|public|repeat|required|rethrows|return|right|safe|self|set|some|static|struct|subscript|super|switch|throw|throws|try|typealias|unowned|unsafe|var|weak|where|while|willSet)\b/,
 	'boolean': /\b(?:false|true)\b/,
-	'nil': {
+	'swift-nil': {
 		pattern: /\bnil\b/,
 		alias: 'constant'
 	},
@@ -161,7 +167,7 @@ Prism.languages.swift = {
 	// Operators are generic in Swift. Developers can even create new operators (e.g. +++).
 	// https://docs.swift.org/swift-book/ReferenceManual/zzSummaryOfTheGrammar.html#ID481
 	// This regex only supports ASCII operators.
-	'operator': /[-+*/%=!<>&|^~?]+|\.[.\-+*/%=!<>&|^~?]+/,
+	'swift-operator': /[-+*/%=!<>&|^~?]+|\.[.\-+*/%=!<>&|^~?]+/,
 	'swift-punctuation': /[{}[\]();,.:\\]/
 };
 
