@@ -6,7 +6,7 @@ Prism.languages.swift = {
 		greedy: true
 	},
 	'swift-white': {
-		pattern: /menuItem|menuItem\.destination|menuItem\.text)/,
+		pattern: /(menuItem|menuItem\.destination|menuItem\.text|\(\)|\{\}|\.)/,
 		lookbehind: true,
 		greedy: true
 	},
