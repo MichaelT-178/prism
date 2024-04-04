@@ -6,7 +6,7 @@ Prism.languages.swift = {
 		greedy: true
 	},
 	'swift-white': {
-		pattern: /(\(\)|\{\}|:|\.|Menuitem|menuItem\.destination|menuItem\.text)/,
+		pattern: /menuItem|menuItem\.destination|menuItem\.text)/,
 		lookbehind: true,
 		greedy: true
 	},
@@ -156,7 +156,7 @@ Prism.languages.swift = {
 
 	// A class name must start with an upper-case letter and be either 1 letter long or contain a lower-case letter.
 	'swift-class-name': /\b[A-Z](?:[A-Z_\d]*[a-z]\w*)?(?=k\))\b/,
-	'function': /\b[a-z_]\w*(?=\s*\()/i,
+	// 'function': /\b[a-z_]\w*(?=\s*\()/i,
 	'constant': /\b(?:[A-Z_]{2,}|k[A-Z][A-Za-z_]+)\b/,
 
 	// Operators are generic in Swift. Developers can even create new operators (e.g. +++).
