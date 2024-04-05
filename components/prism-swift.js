@@ -23,7 +23,7 @@ Prism.languages.swift = {
 	},
 	'swift-green': {
 		// Nested comments are supported up to 2 levels
-		pattern: /picture|shakyPaleRed|name/,
+		pattern: /picture|shakyPaleRed|name|destination|text/,
 		lookbehind: true,
 		greedy: true
 	},
