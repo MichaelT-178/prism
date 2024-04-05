@@ -13,7 +13,8 @@ Prism.languages.python = {
     },
     'always-red': {
         pattern: /(?<=\w)\}/,
-        alias: 'red'
+        lookbehind: true,
+        greedy: true
     },    
     'teal-highlight': {
         pattern: /ValueError|__str__|__len__|__init__/,
