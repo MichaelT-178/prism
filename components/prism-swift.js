@@ -18,7 +18,7 @@ Prism.languages.swift = {
 		greedy: true
 	},
 	'swift-white': {
-		pattern: /\b(menuItem|destination|text)\b/,
+		pattern: /menuItem/,
 		greedy: true
 	},
 	'swift-green': {
