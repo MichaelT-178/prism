@@ -12,7 +12,7 @@ Prism.languages.python = {
         alias: 'red',
     },
     'always-red': {
-        pattern: /(?<=\{)[\w.]+(?=\})|(?<=[\w\])])\}(?=\s|$)|\{(?=[\w.])/,
+        pattern: /(?<=\{)[\w.]+(?=\})|(?<=[\w.)])\}(?=\s|$)|\{(?=[\w.])/,
         alias: 'red'
     },       
     'teal-highlight': {
