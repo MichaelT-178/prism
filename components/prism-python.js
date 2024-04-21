@@ -1,6 +1,6 @@
 Prism.languages.python = {
     'always-blue': {
-        pattern: /(\badd_car\b|\bappend\b|\bjoin\b|\bremove_car_by_id\b|\bremove\b|\bmain\b|\bCar(?=\()|\bCarList(?=\())\b/,
+        pattern: /(\badd_car\b|\bappend\b|\bjoin\b|\bremove_car_by_id\b|\bremove\b|\bmain\b|\bCar(?=\()|\bCarList(?=\())|\bitems(?=\(\))/,
         alias: 'blue'
     },
     'self-orange': {
