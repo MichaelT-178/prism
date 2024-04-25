@@ -151,13 +151,13 @@ Prism.languages.insertBefore('javascript', 'string', {
 	}
 });
 
-// Prism.languages.insertBefore('javascript', 'operator', {
-// 	'literal-property': {
-// 		pattern: /((?:^|[,{])[ \t]*)(?!\s)[_$a-zA-Z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])*(?=\s*:)/m,
-// 		lookbehind: true,
-// 		alias: 'property'
-// 	},
-// });
+Prism.languages.insertBefore('javascript', 'operator', {
+	'literal-property': {
+		pattern: /((?:^|[,{])[ \t]*)(?!\s)[_$a-zA-Z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])*(?=\s*:)/m,
+		lookbehind: true,
+		alias: 'property'
+	},
+});
 
 if (Prism.languages.markup) {
 	Prism.languages.markup.tag.addInlined('script', 'javascript');
