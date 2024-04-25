@@ -1,5 +1,15 @@
 (function (Prism) {
 
+	Prism.languages.insertBefore('javascript', 'keyword', {
+		'red-js': [
+			{
+				pattern: /\b(template|router-link|style)\b/,
+				lookbehind: true,
+				alias: 'red'
+			}
+		]
+	});
+	
 	Prism.languages.insertBefore('javascript', 'function-variable', {
 		'method-variable': {
 			pattern: RegExp('(\\.\\s*)' + Prism.languages.javascript['function-variable'].pattern.source),
