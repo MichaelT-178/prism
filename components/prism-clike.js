@@ -1,12 +1,3 @@
-Prism.languages.insertBefore('javascript', 'keyword', {
-    'red-js': {
-        pattern: /\b(template|router-link|style)\b/,
-        greedy: true,
-        alias: 'red'
-    },
-});
-
-
 Prism.languages.clike = {
 	'comment': [
 		{
