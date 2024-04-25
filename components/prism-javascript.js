@@ -47,15 +47,20 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		lookbehind: true
 	},
 	'operator': /--|\+\+|\*\*=?|=>|&&=?|\|\|=?|[!=]==|<<=?|>>>?=?|[-+*/%&|^!=<>]=?|\.{3}|\?\?=?|\?\.?|[~:]/,
-	'red-js': [
-		{
-			pattern: /\b(template|router-link|style)\b/,
-			lookbehind: true
-		}
-	],
 });
 
 Prism.languages.javascript['class-name'][0].pattern = /(\b(?:class|extends|implements|instanceof|interface|new)\s+)[\w.\\]+/;
+
+Prism.languages.insertBefore('javascript', 'keyword', {
+    'red-js': [
+        {
+            pattern: /\b(template|router-link|style)\b/,
+            lookbehind: true,
+            alias: 'red'
+        }
+    ]
+});
+
 
 Prism.languages.insertBefore('javascript', 'keyword', {
 	'regex': {
