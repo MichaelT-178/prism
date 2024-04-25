@@ -11,6 +11,12 @@ Prism.languages.clike = {
 			greedy: true
 		}
 	],
+	'red-js': {
+		pattern: /\b(template|router-link|style)\b/,
+		lookbehind: true,
+		alias: 'red',
+		greedy: true
+	},
 	'string': {
 		pattern: /(["'])(?:\\(?:\r\n|[\s\S])|(?!\1)[^\\\r\n])*\1/,
 		greedy: true
