@@ -1,3 +1,14 @@
+Prism.languages.insertBefore('javascript', 'keyword', {
+    'red-js': [
+        {
+            pattern: /\b(template|router-link|style)\b/,
+            lookbehind: true,
+            alias: 'red'
+        }
+    ]
+});
+
+
 Prism.languages.javascript = Prism.languages.extend('clike', {
 	'class-name': [
 		Prism.languages.clike['class-name'],
@@ -50,16 +61,6 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 });
 
 Prism.languages.javascript['class-name'][0].pattern = /(\b(?:class|extends|implements|instanceof|interface|new)\s+)[\w.\\]+/;
-
-Prism.languages.insertBefore('javascript', 'keyword', {
-    'red-js': [
-        {
-            pattern: /\b(template|router-link|style)\b/,
-            lookbehind: true,
-            alias: 'red'
-        }
-    ]
-});
 
 
 Prism.languages.insertBefore('javascript', 'keyword', {
