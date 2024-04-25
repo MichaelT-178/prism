@@ -1,9 +1,10 @@
 Prism.languages.clike = {
 	'red-js': {
-        pattern: /template/,
-        lookbehind: true,
-        greedy: true,
-    },
+		pattern: /\b(template|router-link|style)\b/,
+		lookbehind: true,
+		alias: 'red',
+		greedy: true
+	},
 	'comment': [
 		{
 			pattern: /(^|[^\\])\/\*[\s\S]*?(?:\*\/|$)/,
