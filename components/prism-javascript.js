@@ -1,6 +1,6 @@
 Prism.languages.javascript = Prism.languages.extend('clike', {
 	'red-js': {
-		pattern: /\b(template|router-link|style)\b/,
+		pattern: /template/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
