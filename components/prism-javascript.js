@@ -73,7 +73,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 	'operator': /--|\+\+|\*\*=?|=>|&&=?|\|\|=?|[!=]==|<<=?|>>>?=?|[-+*/%&|^!=<>]=?|\.{3}|\?\?=?|\?\.?|[~:]/,
 });
 
-Prism.languages.javascript['punctuation'] = /[{}[\];(),:]/
+Prism.languages.javascript['punctuation'] = /[{}[\];(),]/
 Prism.languages.javascript['operator'] = /[!=]=?=?|&&?|\|\|?|[?*~^%]/,
 
 Prism.languages.javascript['class-name'][0].pattern = /(\b(extends|implements|instanceof|interface|new)\s+)[\w.\\]+/;
