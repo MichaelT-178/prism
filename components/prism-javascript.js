@@ -1,12 +1,12 @@
 Prism.languages.javascript = Prism.languages.extend('clike', {
 	'red-js': {
-		pattern: /template|style|router-link|view|createRouter|createWebHistory|path|component|history|default|createApp|App|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)/,
+		pattern: /template|style|router-link|view|createRouter|createWebHistory|path|component|history|default|createApp|App|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|buttonText(?=:)/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
 	},
 	'orange-js': {
-		pattern: /setup|scoped|class(?=\s*=)|to(?=\s*=)|10px 20px|white|#|4px|16px|.title|red|Arial|sans-serif|purple|.temp-header|(?<=:)path|(?<=:)buttonText/,
+		pattern: /setup|scoped|class(?=\s*=)|to(?=\s*=)|10px 20px|white|#|4px|16px|.title|red|Arial|sans-serif|purple|.temp-header|(?<=:)path|(?<=:)buttonText|\.button/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
