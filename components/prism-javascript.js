@@ -1,12 +1,12 @@
 Prism.languages.javascript = Prism.languages.extend('clike', {
 	'red-js': {
-		pattern: /template|style|router-link|view|createRouter|createWebHistory|path|component|history|default|createApp|App|type|required|buttonText|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)/,
+		pattern: /template|style|router-link|view|createRouter|createWebHistory|path|component|history|default|createApp|App|type|required|buttonText|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|p/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
 	},
 	'orange-js': {
-		pattern: /setup|scoped|class(?=\s*=)|to(?=\s*=)|.button|.button:hover|10px 20px|white|#|4px|16px|.title|red|Arial|sans-serif|purple|.temp-header/,
+		pattern: /setup|scoped|class(?=\s*=)|to(?=\s*=)|\.button|\.button\:hover|10px 20px|white|#|4px|16px|.title|red|Arial|sans-serif|purple|.temp-header/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
@@ -18,7 +18,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'gray-js': {
-		pattern: /router(?=\s*=\s*)|(?<=\()(router)(?=\))|(?<=\bclass\b)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|font-size:|inline-block|<|font-family:|/,
+		pattern: /router(?=\s*=\s*)|(?<=\()(router)(?=\))|(?<=\bclass\b)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
@@ -32,11 +32,11 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 	],
 	'keyword': [
 		{
-			pattern: /((?:^|\})\s*)catch\b/,
+			pattern: /((?^|\})\s*)catch\b/,
 			lookbehind: true
 		},
 		{
-			pattern: /(^|[^.]|\.\.\.\s*)\b(?:as|assert(?=\s*\{)|async(?=\s*(?:function\b|\(|[$\w\xA0-\uFFFF]|$))|await|break|case|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally(?=\s*(?:\{|$))|for|from(?=\s*(?:['"]|$))|function|(?:get|set)(?=\s*(?:[#\[$\w\xA0-\uFFFF]|$))|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)\b/,
+			pattern: /(^|[^.]|\.\.\.\s*)\b(?:as|assert(?=\s*\{)|async(?=\s*(?:function\b|\(|[$\w\xA0-\uFFFF]|$))|await|break|case|class|const|continue|debugger|delete|do|else|enum|export|extends|finally(?=\s*(?:\{|$))|for|from(?=\s*(?:['"]|$))|function|(?:get|set)(?=\s*(?:[#\[$\w\xA0-\uFFFF]|$))|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)\b/,
 			lookbehind: true
 		},
 	],
@@ -131,7 +131,7 @@ Prism.languages.insertBefore('javascript', 'keyword', {
 			inside: Prism.languages.javascript
 		},
 		{
-			pattern: /((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|default|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))(?:(?!\s)[_$a-zA-Z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])*\s*)\(\s*|\]\s*\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s*\)\s*\{)/,
+			pattern: /((?:\b|\s|^)(?!(?:as|async|await|break|case|catch|class|const|continue|debugger|delete|do|else|enum|export|extends|finally|for|from|function|get|if|implements|import|in|instanceof|interface|let|new|null|of|package|private|protected|public|return|set|static|super|switch|this|throw|try|typeof|undefined|var|void|while|with|yield)(?![$\w\xA0-\uFFFF]))(?:(?!\s)[_$a-zA-Z\xA0-\uFFFF](?:(?!\s)[$\w\xA0-\uFFFF])*\s*)\(\s*|\]\s*\(\s*)(?!\s)(?:[^()\s]|\s+(?![\s)])|\([^()]*\))+(?=\s*\)\s*\{)/,
 			lookbehind: true,
 			inside: Prism.languages.javascript
 		}
