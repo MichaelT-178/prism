@@ -6,7 +6,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'orange-js': {
-		pattern: /setup|scoped|class(?=\s*=)|to(?=\s*=)|\.button|\.button:hover|10px 20px|white|#|4px|16px|.title|red|Arial|sans-serif|purple|.temp-header/,
+		pattern: /setup|scoped|class(?=\s*=)|to(?=\s*=)|10px 20px|white|#|4px|16px|.title|red|Arial|sans-serif|purple|.temp-header/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
@@ -72,6 +72,13 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 	},
 	'operator': /--|\+\+|\*\*=?|=>|&&=?|\|\|=?|[!=]==|<<=?|>>>?=?|[-+*/%&|^!=<>]=?|\.{3}|\?\?=?|\?\.?|[~:]/,
 });
+
+Prism.languages.javascript['orange-js'] = {
+    pattern: /(\.button|\.button:hover)/,
+    lookbehind: true,
+    alias: 'selector', // You can use an alias like 'selector' to style it specifically
+    greedy: true
+};
 
 Prism.languages.javascript['class-name'][0].pattern = /(\b(?:class|extends|implements|instanceof|interface|new)\s+)[\w.\\]+/;
 
@@ -174,6 +181,7 @@ Prism.languages.insertBefore('javascript', 'string', {
 		alias: 'property'
 	}
 });
+
 
 // Prism.languages.insertBefore('javascript', 'operator', {
 // 	'literal-property': {
