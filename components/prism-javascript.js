@@ -1,6 +1,6 @@
 Prism.languages.javascript = Prism.languages.extend('clike', {
 	'red-js': {
-		pattern: /template|style|router-link|view|createRouter|createWebHistory|path|component|history|default|createApp|App|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|buttonText(?=:)/,
+		pattern: /template|style|router-link|router-view|createRouter|createWebHistory|(?<!:)\bpath\b|component|history|default|createApp|App|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|buttonText(?=:)/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
