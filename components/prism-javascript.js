@@ -1,12 +1,12 @@
 Prism.languages.javascript = Prism.languages.extend('clike', {
 	'red-js': {
-		pattern: /template|style|router-link|router-view|createRouter|createWebHistory|(?<!:)\bpath\b|component|history|default|createApp|(?<=\()\bApp\b|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|buttonText(?=:)/,
+		pattern: /template|style|router-link|router-view|createRouter|createWebHistory|(?<!:)\bpath\b|component|history|default|createApp|(?<!\()\bApp\b|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|buttonText(?=:)|(?<=import\s+)router/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
 	},
 	'orange-js': {
-		pattern: /setup|scoped|class(?=\s*=)|to(?=\s*=)|10px 20px|white|#|4px|16px|.title|red|Arial|sans-serif|purple|.temp-header|(?<=:)path|(?<=:)buttonText|\.button|\.button:hover|App/,
+		pattern: /setup|scoped|class(?=\s*=)|to(?=\s*=)|10px 20px|white|#|4px|16px|.title|red|Arial|sans-serif|purple|.temp-header|(?<=:)path|(?<=:)buttonText|\.button|\.button:hover/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
@@ -18,7 +18,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'gray-js': {
-		pattern: /router(?=\s*=\s*)|router|(?<=class)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|buttonText/,
+		pattern: /router(?=\s*=\s*)|router|(?<=class)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|buttonText|App/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
