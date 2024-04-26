@@ -1,12 +1,12 @@
 Prism.languages.javascript = Prism.languages.extend('clike', {
 	'red-js': {
-		pattern: /template|style|router-link|view|createRouter|createWebHistory|path|component|history|default|createApp|App|type|required|buttonText|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)/,
+		pattern: /template|style|router-link|view|createRouter|createWebHistory|path|component|history|default|createApp|App|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
 	},
 	'orange-js': {
-		pattern: /setup|scoped|class(?=\s*=)|to(?=\s*=)|10px 20px|white|#|4px|16px|.title|red|Arial|sans-serif|purple|.temp-header/,
+		pattern: /setup|scoped|class(?=\s*=)|to(?=\s*=)|10px 20px|white|#|4px|16px|.title|red|Arial|sans-serif|purple|.temp-header|(?<=:)path|(?<=:)buttonText/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
@@ -18,7 +18,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'gray-js': {
-		pattern: /router(?=\s*=\s*)|router|(?<=\bclass\b)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|/,
+		pattern: /router(?=\s*=\s*)|router|(?<=\bclass\b)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|buttonText/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
@@ -74,7 +74,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 });
 
 Prism.languages.javascript['punctuation'] = /[{}[\];(),:]/
-Prism.languages.javascript['operator'] = /[!=]=?=?|&&?|\|\|?|[?*/~^%]/,
+Prism.languages.javascript['operator'] = /[!=]=?=?|&&?|\|\|?|[?*~^%]/,
 
 Prism.languages.javascript['class-name'][0].pattern = /(\b(?:class|extends|implements|instanceof|interface|new)\s+)[\w.\\]+/;
 
