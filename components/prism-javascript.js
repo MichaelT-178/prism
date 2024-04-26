@@ -1,5 +1,3 @@
-Prism.languages.javascript['punctuation'] = /[{}[\];(),:]/
-
 Prism.languages.javascript = Prism.languages.extend('clike', {
 	'red-js': {
 		pattern: /template|style|router-link|view|createRouter|createWebHistory|path|component|history|default|createApp|App|type|required|buttonText|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|p/,
@@ -75,12 +73,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 	'operator': /--|\+\+|\*\*=?|=>|&&=?|\|\|=?|[!=]==|<<=?|>>>?=?|[-+*/%&|^!=<>]=?|\.{3}|\?\?=?|\?\.?|[~:]/,
 });
 
-Prism.languages.javascript['orange-js'] = {
-    pattern: /(\.button|\.button:hover)/,
-    lookbehind: true,
-    alias: 'selector', // You can use an alias like 'selector' to style it specifically
-    greedy: true
-};
+Prism.languages.javascript['punctuation'] = /[{}[\];(),:]/
 
 Prism.languages.javascript['class-name'][0].pattern = /(\b(?:class|extends|implements|instanceof|interface|new)\s+)[\w.\\]+/;
 
