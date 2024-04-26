@@ -6,7 +6,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'orange-js': {
-		pattern: /setup|scoped|class(?=\s*=)|to(?=\s*=)|10px 20px|white|#|4px|16px|.title|red|Arial|sans-serif|purple|.temp-header|(?<=:)path|(?<=:)buttonText|\.button/,
+		pattern: /setup|scoped|class(??==)|to(?=\s*=)|10px 20px|white|#|4px|16px|.title|red|Arial|sans-serif|purple|.temp-header|(?<=:)path|(?<=:)buttonText|\.button/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
@@ -76,7 +76,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 Prism.languages.javascript['punctuation'] = /[{}[\];(),:]/
 Prism.languages.javascript['operator'] = /[!=]=?=?|&&?|\|\|?|[?*~^%]/,
 
-Prism.languages.javascript['class-name'][0].pattern = /(\b(?:class|extends|implements|instanceof|interface|new)\s+)[\w.\\]+/;
+Prism.languages.javascript['class-name'][0].pattern = /(\b(?:|extends|implements|instanceof|interface|new)\s+)[\w.\\]+/;
 
 
 Prism.languages.insertBefore('javascript', 'keyword', {
