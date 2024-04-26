@@ -1,6 +1,6 @@
 Prism.languages.javascript = Prism.languages.extend('clike', {
 	'red-js': {
-		pattern: /template|style|router-link|view|createRouter|createWebHistory|path|component|history|default|createApp|App|type|required|buttonText|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|p/,
+		pattern: /template|style|router-link|view|createRouter|createWebHistory|path|component|history|default|createApp|App|type|required|buttonText|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
@@ -18,7 +18,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'gray-js': {
-		pattern: /router(?=\s*=\s*)|(?<=\()(router)(?=\))|(?<=\bclass\b)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|/,
+		pattern: /router(?=\s*=\s*)|router|(?<=\bclass\b)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
