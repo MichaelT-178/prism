@@ -30,7 +30,8 @@ async def run_npm_install():
     print(c('\nSuccessfully deleted the outdated prismjs library in your project!', 'green'))
     print(c('\nDownloading new prismjs library in your project. This will probably take 50-100 seconds...', 'blue'))
     
-
+    # rm -rf node_modules/prismjs
+    # npm install prismjs@https://github.com/MichaelT-178/prism.git
     process = await asyncio.create_subprocess_exec(
         "npm", "install", "prismjs@https://github.com/MichaelT-178/prism.git",
         stdout=asyncio.subprocess.DEVNULL,

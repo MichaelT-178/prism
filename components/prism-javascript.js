@@ -12,7 +12,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'gray-js': {
-		pattern: /router(?=\s*=\s*)|router|(?<=class)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|buttonText|App|:(?=path)/,
+		pattern: /router(?=\s*=\s*)|router|(?<=class)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|buttonText|App|:(?=path|buttonText|to|class)/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
