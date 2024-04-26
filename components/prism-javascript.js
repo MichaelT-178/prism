@@ -32,7 +32,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 	],
 	'keyword': [
 		{
-			pattern: /((?^|\})\s*)catch\b/,
+			pattern: /((?:^|\})\s*)catch\b/,
 			lookbehind: true
 		},
 		{
