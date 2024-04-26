@@ -27,5 +27,5 @@ Prism.languages.clike = {
 	'function': /\b\w+(?=\()/,
 	'number': /\b0x[\da-f]+\b|(?:\b\d+(?:\.\d*)?|\B\.\d+)(?:e[+-]?\d+)?/i,
 	'operator': /[<>]=?|[!=]=?=?|--?|\+\+?|&&?|\|\|?|[?*/~^%]/,
-	'punctuation': /[{}[\];(),.:]/
+	'punctuation': /[{}[\];(),:]/
 };
