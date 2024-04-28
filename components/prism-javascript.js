@@ -1,12 +1,12 @@
 Prism.languages.javascript = Prism.languages.extend('clike', {
 	'yellow-js': {
-		pattern: /(?<=<)RouterBtn|Router(?=>)|Routes(?=>)|(?<=<)Route|(?<=<)HomePage|(?<=<)SecondPage|(?<=<)Link/,
+		pattern: /(?<=<)RouterBtn|Router(?=>)|Routes(?=>)|(?<=<)Route|(?<=<)HomePage|(?<=<)SecondPage|(?<=<)\bLink\b(?!Btn)/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
 	},
 	'red-js': {
-		pattern: /buttonText(?=:)|template|RouterBtn|style|router-link|router-view|createRouter|createWebHistory|(?<!:)\bpath\b|component|history|default|createApp|(?<!\()\bApp\b|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|(?<=import\s+)router|content|theme|extend|fontFamily|sans(?![\-])|plugins|React|HomePage|Router|Routes|Route|BrowserRouter|Link(?=\s\})|div|useState|(?<=<)button/,
+		pattern: /buttonText(?=:)|template|RouterBtn|style|router-link|router-view|createRouter|createWebHistory|(?<!:)\bpath\b|component(?=:)|history|default|createApp|(?<!\()\bApp\b|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|(?<=import\s+)router|content|theme|extend|fontFamily|sans(?![\-])|plugins|React|HomePage|Router|Routes|Route|BrowserRouter|Link(?=\s\})|div|useState|(?<=<)button/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
