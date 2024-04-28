@@ -1,6 +1,7 @@
 Prism.languages.javafx = {
-    'keyword': {
+    'javafx-cat': {
         pattern: /cat/,
         alias: 'blue'
     },
-}
+};
+
