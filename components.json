@@ -720,10 +720,6 @@
 			],
 			"owner": "RunDevelopment"
 		},
-		"javafx": {
-			"title": "JavaFx",
-			"owner": "MichaelT-178"
-		},
 		"javastacktrace": {
 			"title": "Java stack trace",
 			"owner": "RunDevelopment"
