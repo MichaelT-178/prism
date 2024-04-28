@@ -5,13 +5,5 @@ Prism.languages.javafx = {
     },
 };
 
-
-(function(Prism) {
-    Prism.languages.javafx = {
-        'javafx-cat': {
-            pattern: /cat/,
-            alias: 'blue'
-        },
-    };
- })(Prism);
+Prism.languages['javafx'] = Prism.languages.javafx;
  
