@@ -720,7 +720,7 @@
 			],
 			"owner": "RunDevelopment"
 		},
-		"javax":{
+		"javafx":{
 			"title": "JavaFx", 
 			"owner": "MichaelT-178"
 		},
