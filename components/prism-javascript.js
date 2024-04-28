@@ -6,19 +6,19 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'red-js': {
-		pattern: /AppRouter|buttonText(?=:)|template|RouterBtn|style|router-link|router-view|createRouter|createWebHistory|(?<!:)\bpath\b|component(?=:)|history|default|createApp|(?<!\()\bApp\b|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|(?<=import\s+)router|content|theme|extend|fontFamily|sans(?![\-])|plugins|React|HomePage|Router|Routes|Route|BrowserRouter|Link(?=\s\})|div|useState|(?<=<)button|(?<=\\)button|SecondPage(?=:)/,
+		pattern: /AppRouter|buttonText(?=:)|template|(?<=\/)button|RouterBtn|path(?=:)|style|router-link|router-view|createRouter|createWebHistory|component(?=:)|history|default|createApp|(?<!\()\bApp\b|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|(?<=import\s+)router|content|theme|extend|fontFamily|sans(?![\-])|plugins|React|HomePage|Router|Routes|Route|BrowserRouter|Link(?=\s\})|div|useState|(?<=<)button|(?<=\\)button|SecondPage(?=:)/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
 	},
 	'orange-js': {
-		pattern: /(?<!:)\bpath\b(?==)|buttonText(?==)|setup|scoped|class(?=\s*=)|to(?=\s*=)|10px 20px|white|#|4px|16px|.title|red|Arial|sans-serif|purple|.temp-header|(?<=:)path|(?<=:)buttonText|\.button|:hover|element|className|onClick/,
+		pattern: /buttonText(?==)|setup|scoped|class(?=\s*=)|to(?=\s*=)|10px 20px|white|path(?==)|#|4px|16px|.title|red|Arial|sans-serif|purple|.temp-header|(?<=:)buttonText|\.button|:hover|element|className|onClick/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
 	},
 	'gray-js': {
-		pattern: /router(?=\s*=\s*)|router|(?<=class)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|App|:(?=path|buttonText|to|class)|components;/,
+		pattern: /router(?=\s*=\s*)|router|path(?=[,}])|(?<=class)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|App|:(?=path|buttonText|to|class)|components;/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
