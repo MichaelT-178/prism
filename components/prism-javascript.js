@@ -1,4 +1,10 @@
 Prism.languages.javascript = Prism.languages.extend('clike', {
+	'yellow-js': {
+		pattern: /Router(?=>)|Routes(?=>)|Route(?=>)|(?<=<)HomePage|(?<=<)SecondPage|Link/,
+		lookbehind: true,
+		alias: 'red',
+		greedy: true
+	},
 	'red-js': {
 		pattern: /template|style|router-link|router-view|createRouter|createWebHistory|(?<!:)\bpath\b|component|history|default|createApp|(?<!\()\bApp\b|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|buttonText(?=:)|(?<=import\s+)router|content|theme|extend|fontFamily|sans|plugins|React|HomePage|Router|Routes|Route|BrowserRouter|Link(?=\s\})|RouterBtn|div/,
 		lookbehind: true,
@@ -12,7 +18,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'gray-js': {
-		pattern: /router(?=\s*=\s*)|router|(?<=class)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|buttonText|App|:(?=path|buttonText|to|class)|(?<=@tailwind\s+)components;/,
+		pattern: /router(?=\s*=\s*)|router|(?<=class)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|buttonText|App|:(?=path|buttonText|to|class)|components;/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
@@ -25,12 +31,6 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 	},
 	'purple-js': {
 		pattern: /@tailwind/,
-		lookbehind: true,
-		alias: 'red',
-		greedy: true
-	},
-	'yellow-js': {
-		pattern: /Router(?=>)|Routes(?=>)|Route(?=>)|(?<=<)HomePage|(?<=<)SecondPage|Link/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
