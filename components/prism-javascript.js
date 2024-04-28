@@ -1,24 +1,36 @@
 Prism.languages.javascript = Prism.languages.extend('clike', {
 	'red-js': {
-		pattern: /template|style|router-link|router-view|createRouter|createWebHistory|(?<!:)\bpath\b|component|history|default|createApp|(?<!\()\bApp\b|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|buttonText(?=:)|(?<=import\s+)router/,
+		pattern: /template|style|router-link|router-view|createRouter|createWebHistory|(?<!:)\bpath\b|component|history|default|createApp|(?<!\()\bApp\b|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|buttonText(?=:)|(?<=import\s+)router|content|theme|extend|fontFamily|sans|plugins|React|HomePage|Router|Routes|Route|BrowserRouter|Link(?=\s\})|RouterBtn|div/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
 	},
 	'orange-js': {
-		pattern: /setup|scoped|class(?=\s*=)|to(?=\s*=)|10px 20px|white|#|4px|16px|.title|red|Arial|sans-serif|purple|.temp-header|(?<=:)path|(?<=:)buttonText|\.button|:hover/,
+		pattern: /setup|scoped|class(?=\s*=)|to(?=\s*=)|10px 20px|white|#|4px|16px|.title|red|Arial|sans-serif|purple|.temp-header|(?<=:)path|(?<=:)buttonText|\.button|:hover|element|className/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
 	},
 	'gray-js': {
-		pattern: /router(?=\s*=\s*)|router|(?<=class)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|buttonText|App|:(?=path|buttonText|to|class)/,
+		pattern: /router(?=\s*=\s*)|router|(?<=class)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|buttonText|App|:(?=path|buttonText|to|class)|(?<=@tailwind\s+)components;/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
 	},
 	'teal-js': {
 		pattern: /:|=|007bff|0056b3/,
+		lookbehind: true,
+		alias: 'red',
+		greedy: true
+	},
+	'purple-js': {
+		pattern: /@tailwind/,
+		lookbehind: true,
+		alias: 'red',
+		greedy: true
+	},
+	'yellow-js': {
+		pattern: /Router(?=>)|Routes(?=>)|Route(?=>)|(?<=<)HomePage|(?<=<)SecondPage|Link/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
