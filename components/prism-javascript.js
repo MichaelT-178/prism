@@ -1,6 +1,6 @@
 Prism.languages.javascript = Prism.languages.extend('clike', {
 	'yellow-js': {
-		pattern: /(?<=<)RouterBtn|Router(?=>)|Routes(?=>)|(?<=<)Route|(?<=<)HomePage|(?<=<)SecondPage|(?<=<)\bLink\b(?!Btn)|(?<=\/)Link(?!Btn)/,
+		pattern: /(?<=<)RouterBtn|Router(?=>)|Routes(?=>)|(?<=<)Route|(?<=<)HomePage|(?<=<)AppRouter|(?<=<)SecondPage|(?<=<)\bLink\b(?!Btn)|(?<=\/)Link(?!Btn)/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
