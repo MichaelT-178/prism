@@ -77,10 +77,6 @@
 			"alias": "js",
 			"option": "default"
 		},
-		"javafx":{
-			"title": "JavaFx", 
-			"owner": "MichaelT-178"
-		},
 		"abap": {
 			"title": "ABAP",
 			"owner": "dellagustin"
