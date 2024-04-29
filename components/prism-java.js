@@ -1,25 +1,24 @@
 (function (Prism) {
 
-	
-	var alwaysGray = {
-		pattern: /application;|javafx\.application\.Application;|javafx\.fxml\.FXMLLoader;|javafx\.scene\.Parent;|javafx\.scene\.Scene;|javafx\.stage\.Stage;|javafx\.fxml\.FXML;|javafx\.scene\.control\.Label;/,
-		lookbehind: true,
-		alias: 'white',
-		greedy: true
-	};
-
-	var alwaysYellow = {
-		pattern: /void/,
-		lookbehind: true,
-		alias: 'white',
-		greedy: true
-	};
-
-	var alwaysPurple = {
-		pattern: /(?<!@)FXML|(?<!@)Override/,
-		lookbehind: true,
-		alias: 'white',
-		greedy: true
+	Prism.languages.javafx = {
+		"always-gray-java": {
+			pattern: /application;|javafx\.application\.Application;|javafx\.fxml\.FXMLLoader;|javafx\.scene\.Parent;|javafx\.scene\.Scene;|javafx\.stage\.Stage;|javafx\.fxml\.FXML;|javafx\.scene\.control\.Label;/,
+			lookbehind: true,
+			alias: 'white',
+			greedy: true
+		},
+		"always-yellow-java": {
+			pattern: /void/,
+			lookbehind: true,
+			alias: 'white',
+			greedy: true
+		},
+		"always-purple-java": {
+			pattern: /(?<!@)FXML|(?<!@)Override/,
+			lookbehind: true,
+			alias: 'white',
+			greedy: true
+		}
 	}
 
 
@@ -73,9 +72,6 @@
 			}
 		],
 		'keyword': keywords,
-		'always-gray-java': alwaysGray,
-		'always-yellow-java': alwaysYellow,
-		'always-purple-java': alwaysPurple,
 		'function': [
 			Prism.languages.clike.function,
 			{
