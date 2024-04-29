@@ -7,7 +7,6 @@
 	// full package (optional) + parent classes (optional)
 	var classNamePrefix = /(?:[a-z]\w*\s*\.\s*)*(?:[A-Z]\w*\s*\.\s*)*/.source;
 
-
 	// based on the java naming conventions
 	var className = {
 		pattern: RegExp(/(^|[^\w.])/.source + classNamePrefix + /(?!\bOverride\b)[A-Z](?:[\d_A-Z]*[a-z]\w*)?\b/.source),
