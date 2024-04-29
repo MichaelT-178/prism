@@ -6,7 +6,7 @@ Prism.languages.fxml = {
 		greedy: true
     },
     "fxml-red": {
-        pattern: /VBox|Label|Button|VBox.margin|Insets|xml|import/,
+        pattern: /VBox.margin|VBox|Label|Button|Insets|xml|import/,
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
