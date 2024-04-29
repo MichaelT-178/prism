@@ -1,11 +1,11 @@
 (function (Prism) {
-	
-	Prism.languages.java['always-gray-java'] = {
-		pattern: /application;|javafx\.application\.Application;|javafx\.fxml\.FXMLLoader;|javafx\.scene\.Parent;|javafx\.scene\.Scene;|javafx\.stage\.Stage;|javafx\.fxml\.FXML;|javafx\.scene\.control\.Label;/,
-		lookbehind: true,
-		alias: 'white',
-		greedy: true
-	};
+
+	// Prism.languages.java['always-gray-java'] = {
+	// 	pattern: /application;|javafx\.application\.Application;|javafx\.fxml\.FXMLLoader;|javafx\.scene\.Parent;|javafx\.scene\.Scene;|javafx\.stage\.Stage;|javafx\.fxml\.FXML;|javafx\.scene\.control\.Label;/,
+	// 	lookbehind: true,
+	// 	alias: 'white',
+	// 	greedy: true
+	// };
 
 	Prism.languages.java['always-yellow-java'] = {
 		pattern: /void/,
