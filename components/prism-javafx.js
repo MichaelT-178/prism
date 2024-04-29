@@ -1,12 +1,5 @@
 Prism.languages.fxml = {
 
-    "fxml-cat": {
-        pattern: /Cat/,
-		lookbehind: true,
-		alias: 'white',
-		greedy: true
-    },
-
     "fxml-red": {
         pattern: /VBox|Label|Button|VBox\.margin|Insets|xml|import/,
 		lookbehind: true,
@@ -27,8 +20,6 @@ Prism.languages.fxml = {
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
-    },
-
-
-
+    }
+    
 }
