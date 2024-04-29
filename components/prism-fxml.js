@@ -16,12 +16,11 @@ Prism.languages.fxml = {
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
+    },
+    "fxml-green": {
+        pattern: /".*?"/,
+		lookbehind: true,
+		alias: 'white',
+		greedy: true
     }
-    // "fxml-green": {
-    //     pattern: /".*?"/,
-	// 	lookbehind: true,
-	// 	alias: 'white',
-	// 	greedy: true
-    // }
-
 }
