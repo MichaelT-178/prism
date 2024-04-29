@@ -77,8 +77,8 @@
 			"alias": "js",
 			"option": "default"
 		},
-		"javafx":{
-			"title": "JavaFx", 
+		"fxml":{
+			"title": "FXML", 
 			"owner": "MichaelT-178"
 		},
 		"abap": {

@@ -1,4 +1,4 @@
-Prism.languages.javafx = {
+Prism.languages.fxml = {
 
     "fxml-cat": {
         pattern: /Cat/,
