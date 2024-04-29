@@ -1,26 +1,25 @@
 (function (Prism) {
+	
+	Prism.languages.java['always-gray-java'] = {
+		pattern: /application;|javafx\.application\.Application;|javafx\.fxml\.FXMLLoader;|javafx\.scene\.Parent;|javafx\.scene\.Scene;|javafx\.stage\.Stage;|javafx\.fxml\.FXML;|javafx\.scene\.control\.Label;/,
+		lookbehind: true,
+		alias: 'white',
+		greedy: true
+	};
 
-	Prism.languages.java = {
-		"always-gray-java": {
-			pattern: /application;|javafx\.application\.Application;|javafx\.fxml\.FXMLLoader;|javafx\.scene\.Parent;|javafx\.scene\.Scene;|javafx\.stage\.Stage;|javafx\.fxml\.FXML;|javafx\.scene\.control\.Label;/,
-			lookbehind: true,
-			alias: 'white',
-			greedy: true
-		},
-		"always-yellow-java": {
-			pattern: /void/,
-			lookbehind: true,
-			alias: 'white',
-			greedy: true
-		},
-		"always-purple-java": {
-			pattern: /(?<!@)FXML|(?<!@)Override/,
-			lookbehind: true,
-			alias: 'white',
-			greedy: true
-		}
-	}
+	Prism.languages.java['always-yellow-java'] = {
+		pattern: /void/,
+		lookbehind: true,
+		alias: 'white',
+		greedy: true
+	};
 
+	Prism.languages.java['always-purple-java'] = {
+		pattern: /(?<!@)FXML|(?<!@)Override/,
+		lookbehind: true,
+		alias: 'white',
+		greedy: true
+	};
 
 	//MICHAELT-178 REMOVED BOOLEAN AND INT
 	var keywords = /\b(?:abstract|assert|break|byte|case|catch|char|class|const|continue|default|do|double|else|enum|exports|extends|final|finally|float|for|goto|if|implements|import|instanceof|interface|long|module|native|new|non-sealed|null|open|opens|package|permits|private|protected|provides|public|record(?!\s*[(){}[\]<>=%~.:,;?+\-*/&|^])|requires|return|sealed|short|static|strictfp|super|switch|synchronized|this|throw|throws|to|transient|transitive|try|uses|var|void|volatile|while|with|yield)\b/;
@@ -139,14 +138,14 @@
 		// 		}
 		// 	}
 		// ],
-		'namespace': {
-			pattern: RegExp(
-				/(\b(?:exports|import(?:\s+static)?|module|open|opens|package|provides|requires|to|transitive|uses|with)\s+)(?!<keyword>)[a-z]\w*(?:\.[a-z]\w*)*\.?/
-					.source.replace(/<keyword>/g, function () { return keywords.source; })),
-			lookbehind: true,
-			inside: {
-				'punctuation': /\./,
-			}
-		}
+		// 'namespace': {
+		// 	pattern: RegExp(
+		// 		/(\b(?:exports|import(?:\s+static)?|module|open|opens|package|provides|requires|to|transitive|uses|with)\s+)(?!<keyword>)[a-z]\w*(?:\.[a-z]\w*)*\.?/
+		// 			.source.replace(/<keyword>/g, function () { return keywords.source; })),
+		// 	lookbehind: true,
+		// 	inside: {
+		// 		'punctuation': /\./,
+		// 	}
+		// }
 	});
 }(Prism));
