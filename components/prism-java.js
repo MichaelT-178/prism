@@ -2,7 +2,7 @@
 
 
 	//MICHAELT-178 REMOVED BOOLEAN AND INT
-	var keywords = /\b(?:abstract|assert|break|byte|case|catch|char|class|const|continue|default|do|double|else|enum|exports|extends|final|finally|float|for|goto|if|implements|import|instanceof|interface|long|module|native|new|non-sealed|null|open|opens|package|permits|private|protected|provides|public|record(?!\s*[(){}[\]<>=%~.:,;?+\-*/&|^])|requires|return|sealed|short|static|strictfp|super|switch|synchronized|this|throw|throws|to|transient|transitive|try|uses|var|void|volatile|while|with|yield)\b/;
+	var keywords = /\b(?:abstract|assert|break|byte|case|catch|char|class|const|continue|default|do|double|else|enum|exports|extends|final|finally|float|for|goto|if|implements|import|instanceof|interface|long|module|native|new|non-sealed|null|open|opens|package|permits|private|protected|provides|public|record(?!\s*[(){}[\]<>=%~.:,;?+\-*/&|^])|requires|return|sealed|short|static|strictfp|super|switch|synchronized|this|throw|throws|to|transient|transitive|try|uses|var|volatile|while|with|yield|(?<!@)FXML|(?<!@)Override)\b/;
 
 	// full package (optional) + parent classes (optional)
 	var classNamePrefix = /(?:[a-z]\w*\s*\.\s*)*(?:[A-Z]\w*\s*\.\s*)*/.source;
@@ -29,7 +29,7 @@
 			greedy: true
 		},
 		'primitive-type': {
-			pattern: /\b(?:boolean|int)\b/,
+			pattern: /\b(?:boolean|int|void)\b/,
 			lookbehind: true,
 			greedy: true
 		},
@@ -67,6 +67,12 @@
 	});
 
 	Prism.languages.insertBefore('java', 'string', {
+		'punctuation': {
+			pattern: /application;|javafx\.application\.Application;|javafx\.fxml\.FXMLLoader;|javafx\.scene\.Parent;|javafx\.scene\.Scene;|javafx\.stage\.Stage;|javafx\.fxml\.FXML;|javafx\.scene\.control\.Label;/,
+			lookbehind: true,
+			alias: 'white',
+			greedy: true
+		},
 		'triple-quoted-string': {
 			// http://openjdk.java.net/jeps/355#Description
 			pattern: /"""[ \t]*[\r\n](?:(?:"|"")?(?:\\.|[^"\\]))*"""/,
