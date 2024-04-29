@@ -86,11 +86,11 @@
 	});
 
 	Prism.languages.insertBefore('java', 'class-name', {
-		'annotation': {
-			pattern: /(^|[^.])@\w+(?:\s*\.\s*\w+)*/,
-			lookbehind: true,
-			alias: 'punctuation'
-		},
+		// 'annotation': {
+		// 	pattern: /(^|[^.])@\w+(?:\s*\.\s*\w+)*/,
+		// 	lookbehind: true,
+		// 	alias: 'punctuation'
+		// },
 		'generics': {
 			pattern: /<(?:[\w\s,.?]|&(?!&)|<(?:[\w\s,.?]|&(?!&)|<(?:[\w\s,.?]|&(?!&)|<(?:[\w\s,.?]|&(?!&))*>)*>)*>)*>/,
 			inside: {
