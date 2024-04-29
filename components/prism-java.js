@@ -33,6 +33,7 @@
 			lookbehind: true,
 			greedy: true
 		},
+		'keyword': keywords,
 		'class-name': [
 			className,
 			{
@@ -50,7 +51,6 @@
 				inside: className.inside
 			}
 		],
-		'keyword': keywords,
 		'function': [
 			Prism.languages.clike.function,
 			{
