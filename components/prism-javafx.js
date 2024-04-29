@@ -1,14 +1,14 @@
 Prism.languages.javafx = {
 
     "fxml-cat": {
-        pattern: /VBox/,
+        pattern: /Cat/,
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
     },
 
     "fxml-red": {
-        pattern: /Label|Button|VBox\.margin|Insets|xml|import/,
+        pattern: /VBox|Label|Button|VBox\.margin|Insets|xml|import/,
 		lookbehind: true,
 		alias: 'white',
 		greedy: true

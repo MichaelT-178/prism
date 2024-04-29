@@ -1,6 +1,6 @@
 (function (Prism) {
 
-	Prism.languages.javafx = {
+	Prism.languages.java = {
 		"always-gray-java": {
 			pattern: /application;|javafx\.application\.Application;|javafx\.fxml\.FXMLLoader;|javafx\.scene\.Parent;|javafx\.scene\.Scene;|javafx\.stage\.Stage;|javafx\.fxml\.FXML;|javafx\.scene\.control\.Label;/,
 			lookbehind: true,
@@ -115,30 +115,30 @@
 				'operator': /[?&|]/
 			}
 		},
-		'import': [
-			{
-				pattern: RegExp(/(\bimport\s+)/.source + classNamePrefix + /(?:[A-Z]\w*|\*)(?=\s*;)/.source),
-				lookbehind: true,
-				inside: {
-					'namespace': className.inside.namespace,
-					'punctuation': /\./,
-					'operator': /\*/,
-					'class-name': /\w+/
-				}
-			},
-			{
-				pattern: RegExp(/(\bimport\s+static\s+)/.source + classNamePrefix + /(?:\w+|\*)(?=\s*;)/.source),
-				lookbehind: true,
-				alias: 'static',
-				inside: {
-					'namespace': className.inside.namespace,
-					'static': /\b\w+$/,
-					'punctuation': /\./,
-					'operator': /\*/,
-					'class-name': /\w+/
-				}
-			}
-		],
+		// 'import': [
+		// 	{
+		// 		pattern: RegExp(/(\bimport\s+)/.source + classNamePrefix + /(?:[A-Z]\w*|\*)(?=\s*;)/.source),
+		// 		lookbehind: true,
+		// 		inside: {
+		// 			'namespace': className.inside.namespace,
+		// 			'punctuation': /\./,
+		// 			'operator': /\*/,
+		// 			'class-name': /\w+/
+		// 		}
+		// 	},
+		// 	{
+		// 		pattern: RegExp(/(\bimport\s+static\s+)/.source + classNamePrefix + /(?:\w+|\*)(?=\s*;)/.source),
+		// 		lookbehind: true,
+		// 		alias: 'static',
+		// 		inside: {
+		// 			'namespace': className.inside.namespace,
+		// 			'static': /\b\w+$/,
+		// 			'punctuation': /\./,
+		// 			'operator': /\*/,
+		// 			'class-name': /\w+/
+		// 		}
+		// 	}
+		// ],
 		'namespace': {
 			pattern: RegExp(
 				/(\b(?:exports|import(?:\s+static)?|module|open|opens|package|provides|requires|to|transitive|uses|with)\s+)(?!<keyword>)[a-z]\w*(?:\.[a-z]\w*)*\.?/
