@@ -1,12 +1,12 @@
 Prism.languages.fxml = {
     "fxml-orange": {
-        pattern: /version|encoding|alignment|spacing|prefWidth|prefHeight|xmlns|xmlns:fx|fx:controller|fx:id|text|style|onAction|bottom/,
+        pattern: /version|encoding|alignment|spacing|prefWidth|prefHeight|xmlns:fx|xmlns|fx:controller|fx:id|text|style|onAction|bottom/,
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
     },
     "fxml-red": {
-        pattern: /VBox|Label|Button|VBox\.margin|Insets|xml|import/,
+        pattern: /VBox|Label|Button|VBox.margin|Insets|xml|import/,
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
