@@ -18,7 +18,7 @@ Prism.languages.fxml = {
 		greedy: true
     },
     "fxml-green": {
-        pattern: /\"^.*\"$/,
+        pattern: /".*?"/,
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
