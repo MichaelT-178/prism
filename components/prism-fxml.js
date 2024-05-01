@@ -1,6 +1,6 @@
 Prism.languages.fxml = {
     "fxml-orange": {
-        pattern: /version|encoding|alignment|spacing|prefWidth|prefHeight|xmlns:fx|xmlns|fx:controller|fx:id|text|style|onAction|bottom|2005/,
+        pattern: /version|encoding|alignment|spacing|prefWidth|prefHeight|xmlns:fx|xmlns|fx:controller|fx:id|text|style|onAction|bottom|2005|/,
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
