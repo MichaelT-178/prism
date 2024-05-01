@@ -6,13 +6,13 @@ Prism.languages.fxml = {
 		greedy: true
     },
     "fxml-red": {
-        pattern: /VBox.margin|VBox|Label|Button|Insets|xml|import|Maker|Year|Cars/,
+        pattern: /VBox.margin|VBox|Label|Button|Insets|xml|import/,
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
     },
     "fxml-gray": {
-        pattern: /(<\? \?>|=|\<|\>|\/>)|javafx\.geometry\.Insets|javafx\.scene\.control\.*|javafx\.scene\.layout\.*|>(?= 2005)|,(?= Year)|(?<=2005);/,
+        pattern: /(<\? \?>|=|\<|\>|\/>)|javafx\.geometry\.Insets|javafx\.scene\.control\.*|javafx\.scene\.layout\.*|>(?= 2005)|,(?= Year)|(?<=2005);|Maker|Year|Cars/,
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
