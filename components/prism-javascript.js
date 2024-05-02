@@ -18,7 +18,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'orange-js': {
-		pattern: /buttonText(?==)|basename|setup|scoped|class(?=\s*=)|to(?=\s*=)|10px 20px|white|path(?==)|#|4px|16px|.title|red|Arial|sans-serif|purple|.temp-header|(?<=:)buttonText|\.button|:hover|element|className|onClick|1280px|2rem/,
+		pattern: /buttonText(?==)|basename|setup|scoped|class(?=\s*=)|to(?=\s*=)|10px 20px|white|path(?==)|#|4px|16px|.title|red|Arial|sans-serif|purple|.test-header|(?<=:)buttonText|\.button|:hover|element|className|onClick|1280px|2rem/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
