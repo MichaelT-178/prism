@@ -30,7 +30,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'teal-js': {
-		pattern: /:|=|007bff|0056b3/,
+		pattern: /:|007bff|0056b3/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
