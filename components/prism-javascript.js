@@ -24,7 +24,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'gray-js': {
-		pattern: /=(?=>)|(?<==)>|(?<=v-model=)(firstName|lastName|searchFirstName)|(?<=click=)(createUser|searchUser)|user(?= in)|(?<=in )users|router(?=\s*=\s*)|router|path(?=[,}])|(?<=class)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|App|:(?=path|buttonText|to|class)|max-width:|margin:|padding:|text-align:/,
+		pattern: /(?<=v-model=)(firstName|lastName|searchFirstName)|(?<=click=)(createUser|searchUser)|user(?= in)|(?<=in )users|router(?=\s*=\s*)|router|path(?=[,}])|(?<=class)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|App|:(?=path|buttonText|to|class)|max-width:|margin:|padding:|text-align:/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
@@ -36,7 +36,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'purple-js': {
-		pattern: /@tailwind|v-if|(?<=user )in|v-for/,
+		pattern: /=(?=>)|(?<==)>|@tailwind|v-if|(?<=user )in|v-for/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
