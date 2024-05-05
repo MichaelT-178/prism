@@ -12,19 +12,19 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'red-js': {
-		pattern: /base(?=:)|defineConfig|(?<=import\s)vue|(?<=import\s)react|AppRouter|buttonText(?=:)|template|router(?=;)|SecondPage(?=;)|(?<=\/)button|RouterBtn|path(?=:)|style|router-link|router-view|createRouter|createWebHistory|component(?=:)|history|default|createApp|(?<!\()\bApp\b|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|(?<=import\s+)router|content|theme|extend|fontFamily|sans(?![\-])|plugins|React|HomePage|Router|Routes|Route|BrowserRouter|Link(?=\s\})|div|useState|(?<=<)button|(?<=\\)button|SecondPage(?=:)/,
+		pattern: /(?<=<)(input|table|thead|tr|th|td|tbody)|(?=(input|table|thead|tr|th|td|tbody)>)|base(?=:)|defineConfig|(?<=import\s)vue|(?<=import\s)react|AppRouter|buttonText(?=:)|template|router(?=;)|SecondPage(?=;)|(?<=\/)button|RouterBtn|path(?=:)|style|router-link|router-view|createRouter|createWebHistory|component(?=:)|history|default|createApp|(?<!\()\bApp\b|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|(?<=import\s+)router|content|theme|extend|fontFamily|sans(?![\-])|plugins|React|HomePage|Router|Routes|Route|BrowserRouter|Link(?=\s\})|div|useState|(?<=<)button|(?<=\\)button|SecondPage(?=:)/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
 	},
 	'orange-js': {
-		pattern: /buttonText(?==)|basename|setup|scoped|class(?=\s*=)|to(?=\s*=)|10px 20px|white|path(?==)|#|4px|16px|.title|red|Arial|sans-serif|purple|.test-header|(?<=:)buttonText|\.button|:hover|element|className|onClick|1280px|2rem/,
+		pattern: /buttonText(?==)|basename|setup|scoped|class(?=\s*=)|to(?=\s*=)|10px 20px|white|path(?==)|#|4px|16px|.title|red|Arial|sans-serif|purple|.test-header|(?<=:)buttonText|\.button|:hover|element|className|onClick|1280px|2rem|v-model(?= =)|placeholder(?= =)|key(?= =)|(?<=@)click/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
 	},
 	'gray-js': {
-		pattern: /router(?=\s*=\s*)|router|path(?=[,}])|(?<=class)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|App|:(?=path|buttonText|to|class)|max-width:|margin:|padding:|text-align:/,
+		pattern: /(?<=v-model=)(firstName|lastName|searchFirstName)|(?<=click=)(createUser|searchUser)|user(?= in)|(?<=in )users|router(?=\s*=\s*)|router|path(?=[,}])|(?<=class)=|:(?=\s*to)|display:|padding:|color:|background-color:|border:|border-radius:|text-align:|text-decoration:|App|font-size:|inline-block|<|font-family:|App|:(?=path|buttonText|to|class)|max-width:|margin:|padding:|text-align:/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
@@ -36,9 +36,15 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'purple-js': {
-		pattern: /@tailwind/,
+		pattern: /@tailwind|v-if|(?<=user )in|v-for/,
 		lookbehind: true,
 		alias: 'red',
+		greedy: true
+	},
+	'html-comment': {
+		pattern: /<!-- Search section -->|<!-- Display results in a table -->|<!-- Drop Tables Button -->/,
+		lookbehind: true,
+		alias: 'grey',
 		greedy: true
 	},
 	'class-name': [
