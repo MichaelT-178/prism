@@ -195,11 +195,11 @@ Prism.languages.insertBefore('javascript', 'string', {
 		}
 	},
 	'string-property': {
-		pattern: /((?:^|[,{])[ \t]*)(?<!\bv-(?:if|for)=\s*)(["'])(?:\\(?:\r\n|[\s\S])|(?!\2)[^\\\r\n])*\2(?=\s*:)/m,
+		pattern: /((?:^|[,{])[ \t]*)(["'])(?:\\(?:\r\n|[\s\S])|(?!\2)[^\\\r\n])*\2(?=\s*:)/m,
 		lookbehind: true,
 		greedy: true,
 		alias: 'property'
-	}	
+	}
 });
 
 
