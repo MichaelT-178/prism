@@ -1,10 +1,10 @@
 Prism.languages.python = {
     'always-blue': {
-        pattern: /(\badd_car\b|\bappend\b|\bjoin\b|\bremove_car_by_id\b|\bremove\b|\bmain\b|\bCar(?=\()|\bCarList(?=\())|\bitems(?=\(\))|connect(?=\()|cursor(?=\()|execute(?=\()|commit(?=\()|close(?=\()|read(?=\()|loads(?=\()/,
+        pattern: /(\badd_car\b|@routes_blueprint|\bappend\b|\bjoin\b|\bremove_car_by_id\b|\bremove\b|\bmain\b|\bCar(?=\()|\bCarList(?=\())|\bitems(?=\(\))|connect(?=\()|cursor(?=\()|execute(?=\()|commit(?=\()|close(?=\()|read(?=\()|loads(?=\()/,
         alias: 'blue'
     },
     'always-blue-two': {
-        pattern: /\b(Flask|SQLAlchemy|@routes_blueprint.route|from_object|init_db|CORS|register_blueprint|create_app|run|abspath|dirname|get|init_app|app_context|create_all|Column|String|Blueprint|add|User|jsonify|filter_by|first|drop)(?=\()/,
+        pattern: /\b(Flask|SQLAlchemy|.route|from_object|init_db|CORS|register_blueprint|create_app|run|abspath|dirname|get|init_app|app_context|create_all|Column|String|Blueprint|add|User|jsonify|filter_by|first|drop)(?=\()/,
         alias: 'blue'
     },
     'self-orange': {
