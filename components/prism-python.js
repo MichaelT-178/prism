@@ -1,19 +1,27 @@
 Prism.languages.python = {
     'always-blue': {
-        pattern: /(\badd_car\b|\bappend\b|\bjoin\b|\bremove_car_by_id\b|\bremove\b|\bmain\b|\bCar(?=\()|\bCarList(?=\())|\bitems(?=\(\))|connect(?=\()|cursor(?=\()|execute(?=\()|commit(?=\()|close(?=\()|read(?=\()|loads(?=\()/,
+        pattern: /(\badd_car\b|\b@routes_blueprint.route\b|\bappend\b|\bjoin\b|\bremove_car_by_id\b|\bremove\b|\bmain\b|\bCar(?=\()|\bCarList(?=\())|\bitems(?=\(\))|connect(?=\()|cursor(?=\()|execute(?=\()|commit(?=\()|close(?=\()|read(?=\()|loads(?=\()/,
+        alias: 'blue'
+    },
+    'always-blue-two': {
+        pattern: /\b(Flask|from_object|init_db|CORS|register_blueprint|create_app|run|abspath|dirname|get|init_app|app_context|create_all|Column|String|Blueprint|add|User|jsonify|filter_by|first|drop)(?=\()/,
         alias: 'blue'
     },
     'self-orange': {
-        pattern: /(?<=\()\bself\b(?=[),])/,
+        pattern: /(?<=\()\bself\b(?=[),])|\b(resources|debug|primary_key|unique|nullable|firstname|lastname|methods)(?==)/,
         alias: 'orange'
     },
     'self-red': {
-        pattern: /self(?=\.)|\{(?=self|new_car|car_id|len|key|value|'Michael')|}(?!\s*for key)|(?<=self\.)\w+\b|(?<=\.)\w+\b/,
+        pattern: /self(?=\.)|\{(?=self|new_car|car_id|len|key|value|'Michael')|}(?!\s*(for key|return)|[})])|(?<=self\.)\w+\b|(?<=\.)\w+\b/,
         alias: 'red',
     },
     'teal-highlight': {
         pattern: /ValueError|__str__|__len__|__init__/,
         alias: 'teal'
+    },
+    'always-yellow': {
+        pattern: /User(db.Model)/,
+        alias: 'yellow'
     },
     'comment': {
         pattern: /(^|[^\\])#.*/,
