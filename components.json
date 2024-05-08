@@ -81,6 +81,10 @@
 			"title": "FXML", 
 			"owner": "MichaelT-178"
 		},
+		"custom-yaml": {
+			"title": "Custom YAML",
+			"owner": "MichaelT-178"
+		},
 		"abap": {
 			"title": "ABAP",
 			"owner": "dellagustin"
