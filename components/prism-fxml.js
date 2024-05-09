@@ -1,6 +1,6 @@
 Prism.languages.fxml = {
     "fxml-orange": {
-        pattern: /version|encoding|alignment|spacing|prefWidth|prefHeight|xmlns:fx|xmlns|fx:controller|fx:id|text|style|onAction|bottom|2005/,
+        pattern: /version|encoding|alignment|spacing|prefWidth|prefHeight|xmlns:fx|xmlns|fx:controller|fx:id|text|style|onAction|bottom|2005|.yaml-red|.yaml-gray|.yaml-green|.yaml-orange|#/,
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
@@ -25,6 +25,12 @@ Prism.languages.fxml = {
     },
     'fxml-purple': {
         pattern: /SELECT|DISTINCT|FROM|WHERE/,
+		lookbehind: true,
+		alias: 'white',
+		greedy: true
+    },
+    'fxml-teal': {
+        pattern: /\/#\S+\/g/,
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
