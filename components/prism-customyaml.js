@@ -1,4 +1,4 @@
-Prism.languages.fxml = {
+Prism.languages.customyaml = {
     "yaml-red": {
         pattern: /.*:/,
 		lookbehind: true,

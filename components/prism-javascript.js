@@ -12,7 +12,19 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'red-js': {
-		pattern: /(?<=\.)\b(?:baseURL|defaults|common|headers|lastname|firstname|value|data)\b|input|table|thead|(?<=<|\/)tr|(?<=<|\/)th|(?<=<|\/)td|tbody|base(?=:)|defineConfig|(?<=import\s)vue|(?<=import\s)react|AppRouter|buttonText(?=:)|template|router(?=;)|SecondPage(?=;)|(?<=\/)button|RouterBtn|path(?=:)|(?<= default) axios|style|router-link|router-view|createRouter|createWebHistory|component(?=:)|history|default|createApp|(?<!\()\bApp\b|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|(?<=import\s+)router|content|theme|extend|fontFamily|sans(?![\-])|plugins|React|HomePage|Router|Routes|Route|BrowserRouter|Link(?=\s\})|div|useState|(?<=<)button|(?<=\\)button|SecondPage(?=:)/,
+		pattern: /(?<=\.)\b(?:baseURL|defaults|common|headers|lastname|firstname|value|data)\b|input|table|thead|(?<=<|\/)tr|(?<=<|\/)th|(?<=<|\/)td|tbody|base(?=:)|defineConfig|(?<=import\s)vue|(?<=import\s)react|AppRouter|buttonText(?=:)|template|router(?=;)|SecondPage(?=;)|(?<=\/)button|RouterBtn|path(?=:)|(?<= default) axios|style|router-link|router-view|createRouter|createWebHistory|component(?=:)|history|default|createApp|(?<!\()\bApp\b|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|(?<=import\s+)router|content|theme|extend|fontFamily|sans(?![\-])|plugins|React|HomePage|Router|Routes|Route|BrowserRouter|Link(?=\s\})|div|languages|customyaml|useState|(?<=<)button|(?<=\\)button|SecondPage(?=:)/,
+		lookbehind: true,
+		alias: 'red',
+		greedy: true
+	},
+	'red-js-two': {
+		pattern: /\b(?:pattern|lookbehind|alias|greedy)(?=:)/,
+		lookbehind: true,
+		alias: 'red',
+		greedy: true
+	},
+	'green-js': {
+		pattern: /"yaml-red"|"yaml-gray"|"yaml-green"|"yaml-orange"/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
@@ -30,7 +42,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'teal-js': {
-		pattern: /:|007bff|0056b3/,
+		pattern: /:|007bff|0056b3|\/\/.*?\/\//,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
