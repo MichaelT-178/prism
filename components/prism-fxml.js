@@ -30,7 +30,7 @@ Prism.languages.fxml = {
 		greedy: true
     },
     'fxml-teal': {
-        pattern: /#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})\b/g,
+        pattern: /E06C75|ABB2BF|98C379|D19A66/,
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
