@@ -207,7 +207,7 @@ Prism.languages.insertBefore('javascript', 'string', {
 		}
 	},
 	'string-property': {
-		pattern: /((?:^|[,{])[ \t]*)(["'])(?:\\(?:\r\n|[\s\S])|(?!\2)[^\\\r\n])*\2(?=\s*:)/m,
+		pattern: /((?:^|[,{])[ \t]*)(["'])(?!yaml-red["'])(?!yaml-orange["'])(?!yaml-green["'])(?!yaml-gray["'])(?:\\(?:\r\n|[\s\S])|(?!\2)[^\\\r\n])*\2(?=\s*:)/m,
 		lookbehind: true,
 		greedy: true,
 		alias: 'property'
