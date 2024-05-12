@@ -20,7 +20,7 @@ Prism.languages.python = {
         alias: 'teal'
     },
     'always-purple': {
-        pattern: /<span class="token punctuation">(:)<\/span>\s*<span class="token format-spec">(02)<\/span>/,
+        pattern: /<span class="token punctuation">:<\/span>\s*<span class="token format-spec">02<\/span>/,
         alias: 'teal'
     },
     'always-yellow': {
