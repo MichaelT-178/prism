@@ -12,7 +12,7 @@ Prism.languages.python = {
         alias: 'orange'
     },
     'self-red': {
-        pattern: /self(?=\.)|\{(?=self|save_dir|os|c|second|name|start|end|new_name|url|minute|hours|CURRENT_DOWNLOAD_PATH|new_car|car_id|len|key|value|'Michael'|website_link|name_of_file|name|response|'LANG')|}(?!\s*(for key|return)|[})])|(?<=self\.)\w+\b|(?<=\.)\w+\b/,
+        pattern: /self(?=\.)|\{(?=self|save_dir|os|<span class="[^"]*blue[^"]*">c\(|second|name|start|end|new_name|url|minute|hours|CURRENT_DOWNLOAD_PATH|new_car|car_id|len|key|value|'Michael'|website_link|name_of_file|name|response|'LANG')|}(?!\s*(for key|return)|[})])|(?<=self\.)\w+\b|(?<=\.)\w+\b/,
         alias: 'red',
     },
     'teal-highlight': {
@@ -95,7 +95,7 @@ Prism.languages.python = {
     'boolean': /\b(?:False|None|True)\b/,
     'number': /\b0(?:b(?:_?[01])+|o(?:_?[0-7])+|x(?:_?[a-f0-9])+)\b|(?:\b\d+(?:_\d+)*(?:\.(?:\d+(?:_\d+)*)?)?|\B\.\d+(?:_\d+)*)(?:e[+-]?\d+(?:_\d+)*)?j?(?!\w)/i,
     'operator': /[-+%=]=?|!=|:=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]/,
-    // 'punctuation': /[{}[\];(),.:](?!02)/
+    'punctuation': /[{}[\];(),.:](?!02)/
 };
 
 Prism.languages.python['string-interpolation'].inside['interpolation'].inside.rest = Prism.languages.python;
