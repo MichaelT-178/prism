@@ -95,7 +95,7 @@ Prism.languages.python = {
     'boolean': /\b(?:False|None|True)\b/,
     'number': /\b0(?:b(?:_?[01])+|o(?:_?[0-7])+|x(?:_?[a-f0-9])+)\b|(?:\b\d+(?:_\d+)*(?:\.(?:\d+(?:_\d+)*)?)?|\B\.\d+(?:_\d+)*)(?:e[+-]?\d+(?:_\d+)*)?j?(?!\w)/i,
     'operator': /[-+%=]=?|!=|:=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]/,
-    'punctuation': /[{}[\];(),.:]/
+    'punctuation': /[{}[\];(),.:](?!02)/
 };
 
 Prism.languages.python['string-interpolation'].inside['interpolation'].inside.rest = Prism.languages.python;
