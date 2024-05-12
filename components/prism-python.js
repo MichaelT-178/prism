@@ -4,19 +4,23 @@ Prism.languages.python = {
         alias: 'blue'
     },
     'always-blue-two': {
-        pattern: /\b(Flask|SQLAlchemy|from_object|init_db|CORS|c|search|group|register_blueprint|create_app|run|abspath|dirname|get|init_app|app_context|create_all|Column|String|Blueprint|add|User|jsonify|filter_by|first|drop|replace|strip|Popen|communicate|encode|system|chdir|check_output|decode|get_website_link|write_to_clipboard)(?=\()|(\.route)(?=\()/, 
+        pattern: /\b(Flask|SQLAlchemy|from_object|exists|List|time_to_seconds|seconds_to_time|YouTube|get_choice|prompt|split||init_db|CORS|c|search|group|register_blueprint|create_app|run|abspath|dirname|get|init_app|app_context|create_all|Column|String|Blueprint|add|User|jsonify|filter_by|first|drop|replace|strip|Popen|communicate|encode|system|chdir|check_output|decode|get_website_link|write_to_clipboard)(?=\()|(\.route)(?=\()/, 
         alias: 'blue'
     },
     'self-orange': {
-        pattern: /(?<=\()\bself\b(?=[),])|\b(resources|debug|primary_key|unique|nullable|firstname|lastname|methods|env|stdin|end)(?==)/,
+        pattern: /(?<=\()\bself\b(?=[),])|\b(resources|debug|primary_key|unique|nullable|firstname|lastname|methods|env|stdin|end|message|choices|shell)(?==)/,
         alias: 'orange'
     },
     'self-red': {
-        pattern: /self(?=\.)|\{(?=self|new_car|car_id|len|key|value|'Michael'|website_link|name_of_file|name|response|'LANG')|}(?!\s*(for key|return)|[})])|(?<=self\.)\w+\b|(?<=\.)\w+\b/,
+        pattern: /self(?=\.)|\{(?=self|save_dir|os|c\(|second|name|start|end|new_name|url|minute|hours|CURRENT_DOWNLOAD_PATH|new_car|car_id|len|key|value|'Michael'|website_link|name_of_file|name|response|'LANG')|}(?!\s*(for key|return)|[})])|(?<=self\.)\w+\b|(?<=\.)\w+\b/,
         alias: 'red',
     },
     'teal-highlight': {
         pattern: /ValueError|__str__|__len__|__init__/,
+        alias: 'teal'
+    },
+    'always-purple': {
+        pattern: /:02/,
         alias: 'teal'
     },
     'always-yellow': {
