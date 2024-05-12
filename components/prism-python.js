@@ -12,7 +12,7 @@ Prism.languages.python = {
         alias: 'orange'
     },
     'self-red': {
-        pattern: /self(?=\.)|\{(?=self|save_dir|os|<span class="[^"]*blue[^"]*">c\(|second|name|start|end|new_name|url|minute|hours|CURRENT_DOWNLOAD_PATH|new_car|car_id|len|key|value|'Michael'|website_link|name_of_file|name|response|'LANG')|}(?!\s*(for key|return)|[})])|(?<=self\.)\w+\b|(?<=\.)\w+\b/,
+        pattern: /self(?=\.)|\{(?=self|save_dir|os|second|name|start|end|new_name|url|minute|hours|CURRENT_DOWNLOAD_PATH|<span class="token punctuation">\\{<\/span>\\s*<span class="token always-blue-two blue">c<\/span>|new_car|car_id|len|key|value|'Michael'|website_link||name_of_file|name|response|'LANG')|}(?!\s*(for key|return)|[})])|(?<=self\.)\w+\b|(?<=\.)\w+\b/,
         alias: 'red',
     },
     'teal-highlight': {
@@ -20,7 +20,7 @@ Prism.languages.python = {
         alias: 'teal'
     },
     'always-purple': {
-        pattern: /:02/,
+        pattern: /<span class="token punctuation">(:)<\/span>\s*<span class="token format-spec">(02)<\/span>/,
         alias: 'teal'
     },
     'always-yellow': {
