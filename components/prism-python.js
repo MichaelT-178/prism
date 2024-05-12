@@ -20,7 +20,7 @@ Prism.languages.python = {
         alias: 'teal'
     },
     'always-purple': {
-        pattern: /<span class="token punctuation">:<\/span>\s*<span class="token format-spec">02<\/span>/,
+        pattern: /:02/,
         alias: 'teal'
     },
     'always-yellow': {
@@ -52,7 +52,7 @@ Prism.languages.python = {
                 lookbehind: true,
                 inside: {
                     'format-spec': {
-                        pattern: /(:)[^:(){}]+(?=\}$)/,
+                        pattern: /(:)[^:(){}]*(?<!02)(?=\}$)/,
                         lookbehind: true
                     },
                     'conversion-option': {
@@ -95,7 +95,7 @@ Prism.languages.python = {
     'boolean': /\b(?:False|None|True)\b/,
     'number': /\b0(?:b(?:_?[01])+|o(?:_?[0-7])+|x(?:_?[a-f0-9])+)\b|(?:\b\d+(?:_\d+)*(?:\.(?:\d+(?:_\d+)*)?)?|\B\.\d+(?:_\d+)*)(?:e[+-]?\d+(?:_\d+)*)?j?(?!\w)/i,
     'operator': /[-+%=]=?|!=|:=|\*\*?=?|\/\/?=?|<[<=>]?|>[=>]?|[&|^~]/,
-    'punctuation': /[{}[\];(),.:](?!<span class="token format-spec">02<\/span>)/
+    'punctuation': /[{}[\];(),.:](?!<\/span><span class="token format-spec">02<\/span>)/
 };
 
 Prism.languages.python['string-interpolation'].inside['interpolation'].inside.rest = Prism.languages.python;
