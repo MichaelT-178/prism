@@ -4,7 +4,7 @@ Prism.languages.python = {
         alias: 'blue'
     },
     'always-blue-two': {
-        pattern: /\b(Flask|SQLAlchemy|from_object|exists|exit|List|time_to_seconds|seconds_to_time|YouTube|get_choice|prompt|split||init_db|CORS|c|search|group|register_blueprint|create_app|run|abspath|dirname|get|init_app|app_context|create_all|Column|String|Blueprint|add|User|jsonify|filter_by|first|drop|replace|strip|Popen|communicate|encode|system|chdir|check_output|decode|get_website_link|write_to_clipboard)(?=\()|(\.route)(?=\()/, 
+        pattern: /\b(Flask|SQLAlchemy|from_object|exists|exit|List|time_to_seconds|rsplit|seconds_to_time|YouTube|get_choice|prompt|split||init_db|CORS|c|search|group|register_blueprint|create_app|run|abspath|dirname|get|init_app|app_context|create_all|Column|String|Blueprint|add|User|jsonify|filter_by|first|drop|replace|strip|Popen|communicate|encode|system|chdir|check_output|decode|get_website_link|write_to_clipboard)(?=\()|(\.route)(?=\()/, 
         alias: 'blue'
     },
     'self-orange': {
