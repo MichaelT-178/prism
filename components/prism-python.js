@@ -4,6 +4,11 @@ Prism.languages.python = {
 		lookbehind: true,
 		greedy: true
 	},
+	'py-red': {
+		pattern: /\{(?![ \n])|(?<![ \n])\}/,
+		lookbehind: true,
+		greedy: true
+	},
 	'string-interpolation': {
 		pattern: /(?:f|fr|rf)(?:("""|''')[\s\S]*?\1|("|')(?:\\.|(?!\2)[^\\\r\n])*\2)/i,
 		greedy: true,
