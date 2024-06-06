@@ -81,6 +81,10 @@
 			"title": "FXML", 
 			"owner": "MichaelT-178"
 		},
+		"sh": {
+			"title": "Shell",
+			"owner": "MichaelT-178"
+		},
 		"custom-yaml": {
 			"title": "Custom YAML",
 			"owner": "MichaelT-178"
