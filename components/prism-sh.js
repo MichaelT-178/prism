@@ -5,7 +5,7 @@ Prism.languages.sh = {
 		greedy: true,
         inside: {
             'red-highlight': {
-                pattern: /Spring Boot/,
+                pattern: /\$\{.*?\}|\$SPRING_BOOT_PID/,
                 alias: 'important'
             }
         }
