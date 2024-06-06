@@ -4,5 +4,11 @@ Prism.languages.sh = {
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
+    },
+    "sh-blue": {
+        pattern: /mvn/,
+		lookbehind: true,
+		alias: 'white',
+		greedy: true
     }
 }
