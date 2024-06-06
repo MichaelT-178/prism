@@ -1,16 +1,16 @@
 Prism.languages.sh = {
     "sh-green": {
-        pattern: /".*?"|'.*?'/,
+        pattern: /".*?"|'.*?'|stop_spring_boot|INT TERM|spring-boot:run/,
 		lookbehind: true,
 		greedy: true
     },
     "sh-blue": {
-        pattern: /mvn|stop_spring_boot|sleep/,
+        pattern: /mvn|stop_spring_boot(?=\()|sleep/,
 		lookbehind: true,
 		greedy: true
     },
     "sh-red": {
-        pattern: /GREENISH|BLUE|NC|SPRING_BOOT_PID|\$\!/,
+        pattern: /YELLOW|BLUE|NC|SPRING_BOOT_PID|\$\!/,
 		lookbehind: true,
 		greedy: true  
     },
@@ -20,7 +20,7 @@ Prism.languages.sh = {
 		greedy: true  
     },
     "sh-teal": {
-        pattern: /echo|kill|trap/,
+        pattern: /echo|kill|trap|wait/,
 		lookbehind: true,
 		greedy: true  
     },
