@@ -11,7 +11,7 @@ Prism.languages.sh = {
         }
     },
     "sh-blue": {
-        pattern: /mvn|stop_spring_boot(?=\()|sleep/,
+        pattern: /mvn|clear|stop_spring_boot(?=\()|sleep/,
 		lookbehind: true,
 		greedy: true
     },
