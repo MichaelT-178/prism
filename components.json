@@ -89,6 +89,10 @@
 			"title": "Custom YAML",
 			"owner": "MichaelT-178"
 		},
+		"custom-properties": {
+			"title": "Custom Properties",
+			"owner": "MichaelT-178"
+		},
 		"abap": {
 			"title": "ABAP",
 			"owner": "dellagustin"
