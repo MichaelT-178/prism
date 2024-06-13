@@ -1,6 +1,6 @@
 Prism.languages.customproperties = {
 	"prop-orange": {
-		pattern: /^[^=]+/,
+		pattern: /^\s*[^=\s][^=]*/,
 		lookbehind: true,
 		alias: 'orange',
 		greedy: true
