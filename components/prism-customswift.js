@@ -88,5 +88,11 @@ Prism.languages.customswift = {
 				'swift-string': /[\s\S]+/
 			}
 		}
-    ]
+    ],
+    'cust-swift-light-purple-other': {
+        pattern: /(?<=\()for(?=:)/,
+        lookbehind: true,
+        alias: 'keyword',
+        greedy: true
+    }
 }
