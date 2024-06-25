@@ -92,7 +92,7 @@ Prism.languages.customswift = {
     'cust-swift-light-purple-other': {
         pattern: /(?<=\()for(?=:)/,
         lookbehind: true,
-        alias: 'keyword',
+        alias: 'light-purple-other',
         greedy: true
     }
 }
