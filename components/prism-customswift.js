@@ -41,7 +41,7 @@ Prism.languages.customswift = {
         greedy: true 
     },
     "cust-swift-light-green": {
-        pattern: /Destination|EditDestinationView|DestinationListingView|ContentView|\bDestination(?=\.)|(?<=\[)Sight(?=\])/,
+        pattern: /\bDestination|EditDestinationView|DestinationListingView|ContentView\b|\bDestination(?=\.)|(?<=\[)Sight(?=\])/,
         lookbehind: true,
         alias: 'light-green',
         greedy: true 
@@ -53,7 +53,7 @@ Prism.languages.customswift = {
         greedy: true  
     },
     "cust-swift-white": {
-        pattern: /[:.=,\{\}\(\)\[\]\\<>]|SwiftUI|Foundation|SwiftData|\\\.|(?<=let\s+)\w+(?=\s*=)|(?<=\()(sight\.name|sight|container|destination\.name|destination|searchString)(?=\))|(?<=\{ )\w+(?= in)|(?<=:\s*)(config|example|destination)(?=\))|(?<=Text\()destination\.date|\bsearchString(?=\.isEmpty)|$0|\[(sort|index)\]|for\s+(\w+)\s+in\s+(\w+)\s*\{|(?<=\= )(name|details|date|priority)/,
+        pattern: /[:.=,\{\}\(\)\[\]\\<>]|SwiftUI|\sindex\s|\sindexSet\s|Foundation|SwiftData|\\\.|(?<=let\s+)\w+(?=\s*=)|(?<=\()(sight\.name|sight|container|destination\.name|destination|searchString)(?=\))|(?<=\{ )\w+(?= in)|(?<=:\s*)(config|example|destination)(?=\))|(?<=Text\()destination\.date|\bsearchString(?=\.isEmpty)|$0|\[(sort|index)\]|for\s+(\w+)\s+in\s+(\w+)\s*\{|(?<=\= )(name|details|date|priority)/,
         lookbehind: true,
         alias: 'dark-yellow',
         greedy: true  
