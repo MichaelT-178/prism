@@ -17,7 +17,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     "cust-swift-purple": {
-        pattern: /(text|selection|isStoredInMemoryOnly|axis|action|for|configurations|order|sort|value|date|time alignment|perform|filter|path|systemImage|deleteRule)(?=:)|(?<=\.)(name|vertical|date|tag|priority|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|#Preview|fatalError|@Query|#Predicate|localizedStandardContains|@Model|@Relationship|(?<=\\)modelContext|(?<=\.)name(?=\.)/,
+        pattern: /(text|selection|isStoredInMemoryOnly|axis|action|for|configurations|order|sort|value|date|time alignment|perform|filter|path|systemImage|deleteRule)(?=:)|(?<=\.)(vertical|date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|#Preview|fatalError|@Query|#Predicate|localizedStandardContains|@Model|@Relationship|(?<=\\)modelContext|(?<=\.)name(?=\.)/,
         lookbehind: true,
         alias: 'purple',
         greedy: true  
@@ -29,7 +29,7 @@ Prism.languages.customswift = {
         greedy: true 
     },
     "cust-swift-blue": {
-        pattern: /\b(destination|newSightName|body|sort)(?=:)|\b(name|details|date|priority)(?=:)|(?<=func\s)\w+(?=\s*\()|\bsearchString(?=:\s*String\b)|\s+(path|sortOrder|searchText|sights)\s*=/,
+        pattern: /\b(destination|newSightName|body|sort)(?=:)|\b(name|details|date|priority)(?=:)|(?<=func\s)\w+(?=\s*\()|\bsearchString(?=:\s*String\b)|\s+(path|sortOrder|searchText|sights)\s*(?==)/,
         lookbehind: true,
         alias: 'blue',
         greedy: true 
