@@ -47,7 +47,7 @@ Prism.languages.customswift = {
         greedy: true 
     },
     "cust-swift-dark-yellow": {
-        pattern: /\b\d+\b/,
+        pattern: /(?<!\$)\b\d+\b/,
         lookbehind: true,
         alias: 'dark-yellow',
         greedy: true  
