@@ -17,7 +17,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     "cust-swift-purple": {
-        pattern: /(text|selection|isStoredInMemoryOnly|axis|action|for|configurations|order|sort|value|date|time alignment|perform|filter|path|systemImage|deleteRule)(?=:)|(?<=\.)(vertical|date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|#Preview|fatalError|@Query|#Predicate|localizedStandardContains|@Model|@Relationship|(?<=\\)modelContext|(?<=\.)name(?=\.)/,
+        pattern: /(text|selection|isStoredInMemoryOnly|axis|action|for|configurations|order|sort|value|time alignment|perform|filter|path|systemImage|deleteRule)(?=:)|(?<=\.)(vertical|date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|#Preview|fatalError|@Query|#Predicate|localizedStandardContains|@Model|@Relationship|(?<=\\)modelContext|(?<=\.)name(?=\.)/,
         lookbehind: true,
         alias: 'purple',
         greedy: true  
@@ -35,7 +35,7 @@ Prism.languages.customswift = {
         greedy: true 
     },
     "cust-swift-green": {
-        pattern: /$destination|(?<=self\.)\b(name|details|date|priority)\b|$newSightName|addDestination|$path|$sortOrder|searchString|_destinations|destination|newSightName|deleteDestinations|(?<=\.)\b(details|sights|init)\b|\.name\)\"|\.name\)\"|\baddSight(?=\))|\b(name|details|sort)(?=:)|(?<=\()destinations(?=\))|(?<=\.)priority(?=,)|\bmodelContext(?=\.(delete|insert))|\b(destinations)(?=\[)|\b(sortOrder)(?=,)|(?<=Destination\.)(searchString|name|priority|date)|\bPath(?=\s+=)/,
+        pattern: /$destination|name|details|date|priority|$newSightName|addDestination|$path|$sortOrder|searchString|_destinations|destination|newSightName|deleteDestinations|(?<=\.)\b(details|sights|init)\b|\.name\)\"|\.name\)\"|\baddSight(?=\))|\b(name|details|sort)(?=:)|(?<=\()destinations(?=\))|(?<=\.)priority(?=,)|\bmodelContext(?=\.(delete|insert))|\b(destinations)(?=\[)|\b(sortOrder)(?=,)|(?<=Destination\.)(searchString|name|priority|date)|\bPath(?=\s+=)/,
         lookbehind: true,
         alias: 'green',
         greedy: true 
