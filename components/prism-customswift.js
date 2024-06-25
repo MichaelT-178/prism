@@ -11,7 +11,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     "cust-swift-pink": {
-        pattern: /import|struct|var|private|some|true|false|if|else|func|return|guard|let |do|self|catch|init|@main|class/,
+        pattern: /import|struct|var|private|some|true|false|if|else|func|return|guard|let |do|(?<!\()for(?=\s)|\bin\b|self|catch|init|@main|class/,
         lookbehind: true,
         alias: 'pink',
         greedy: true
@@ -41,7 +41,7 @@ Prism.languages.customswift = {
         greedy: true 
     },
     "cust-swift-light-green": {
-        pattern: /\b(Destination|EditDestinationView|DestinationListingView|ContentView)(?=\()|\bDestination(?=\.)|(?<=\[)Sight(?=\])/,
+        pattern: /(Destination|EditDestinationView|DestinationListingView|ContentView)(?=\()|\bDestination(?=\.)|(?<=\[)Sight(?=\])/,
         lookbehind: true,
         alias: 'light-green',
         greedy: true 
