@@ -35,7 +35,7 @@ Prism.languages.customswift = {
         greedy: true 
     },
     "cust-swift-green": {
-        pattern: /$destination|name|details|date|priority|$newSightName|addDestination|$path|$sortOrder|searchString|_destinations|destination|newSightName|deleteDestinations|(?<=\.)\b(details|sights|init)\b|\.name\)\"|\.name\)\"|\baddSight(?=\))|\b(name|details|sort)(?=:)|(?<=\()destinations(?=\))|(?<=\.)priority(?=,)|\bmodelContext(?=\.(delete|insert))|\b(destinations)(?=\[)|\b(sortOrder)(?=,)|(?<=Destination\.)(searchString|name|priority|date)|\bPath(?=\s+=)/,
+        pattern: /\$destination|name|details|date|priority|\$newSightName|addDestination|\$path|\$sortOrder|searchString|_destinations|destination|newSightName|deleteDestinations|(?<=\.)\b(details|sights|init)\b|\.name\)\"|\.name\)\"|\baddSight(?=\))|\b(name|details|sort)(?=:)|(?<=\()destinations(?=\))|(?<=\.)priority(?=,)|\bmodelContext(?=\.(delete|insert))|\b(destinations)(?=\[)|\b(sortOrder)(?=,)|(?<=Destination\.)(searchString|name|priority|date)|\bPath(?=\s+=)/,
         lookbehind: true,
         alias: 'green',
         greedy: true 
@@ -53,7 +53,7 @@ Prism.languages.customswift = {
         greedy: true  
     },
     "cust-swift-white": {
-        pattern: /[:.=,\{\}\(\)\[\]\\<>]|SwiftUI|\sindex\s|\sindexSet\s|Foundation|SwiftData|\\\.|(?<=let\s+)\w+(?=\s*=)|(?<=\()(sight\.name|sight|container|destination\.name|destination|searchString)(?=\))|(?<=\{ )\w+(?= in)|(?<=:\s*)(config|example|destination)(?=\))|(?<=Text\()destination\.date|\bsearchString(?=\.isEmpty)|$0|\[(sort|index)\]|for\s+(\w+)\s+in\s+(\w+)\s*\{|(?<=\= )(name|details|date|priority)/,
+        pattern: /[:.=,\{\}\(\)\[\]\\<>]|SwiftUI|\sindex\s|\sindexSet\s|Foundation|SwiftData|\\\.|(?<=let\s+)\w+(?=\s*=)|(?<=\()(sight\.name|sight|container|destination\.name|destination|searchString)(?=\))|(?<=\{ )\w+(?= in)|(?<=:\s*)(config|example|destination)(?=\))|(?<=Text\()destination\.date|\bsearchString(?=\.isEmpty)|\$0|\[(sort|index)\]|for\s+(\w+)\s+in\s+(\w+)\s*\{|(?<=\= )(name|details|date|priority)/,
         lookbehind: true,
         alias: 'dark-yellow',
         greedy: true  
