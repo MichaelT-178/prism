@@ -5,19 +5,19 @@ Prism.languages.customswift = {
 		greedy: true
 	},
     "cust-swift-light-purple": {
-        pattern: /@Bindable|@State|@Environment|(?<!Content)View|destination|String|Date|Int|View|Form|TextField|DatePicker|Section|Picker|Text|ForEach|HStack|VStack|Button|ModelConfiguration|ModelContainer|List|NavigationLink|Query|NavigationStack|Menu|WindowGroup|App|Scene|SortDescriptor|(?<=\[)(Destination|Friends)(?=\])|(?<=<)(Destination|Friends)(?=>)/,
+        pattern: /@Bindable|@State|@Environment|(?<!Content)View|destination|String|Date|Int|Form|TextField|DatePicker|Section|Picker|Text|ForEach|HStack|VStack|Button|ModelConfiguration|ModelContainer|List|NavigationLink|Query|NavigationStack|Menu|WindowGroup|App|Scene|SortDescriptor|(?<=\[)(Destination|Friends)(?=\])|(?<=<)(Destination|Friends)(?=>)/,
         lookbehind: true,
         alias: 'light-purple',
         greedy: true
     },
     "cust-swift-pink": {
-        pattern: /import|struct|var|private|some|true|false|if|else|func|return|guard|let |do|self|catch|init|(?<=\()for|@main|class/,
+        pattern: /import|struct|var|private|some|true|false|if|else|func|return|guard|let |do|self|catch|init|@main|class/,
         lookbehind: true,
         alias: 'pink',
         greedy: true
     },
     "cust-swift-purple": {
-        pattern: /(text|selection|isStoredInMemoryOnly|axis|action|for|configurations|order|sort|value|time alignment|perform|filter|path|systemImage|deleteRule)(?=:)|(?<=\.)(vertical|date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|#Preview|fatalError|@Query|#Predicate|localizedStandardContains|@Model|@Relationship|(?<=\\)modelContext|(?<=\.)name(?=\.)/,
+        pattern: /(text|selection|isStoredInMemoryOnly|axis|action|(?<=\()for|configurations|order|sort|value|time alignment|perform|filter|path|systemImage|deleteRule)(?=:)|(?<=\.)(vertical|date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|#Preview|fatalError|@Query|#Predicate|localizedStandardContains|@Model|@Relationship|(?<=\\)modelContext|(?<=\.)name(?=\.)/,
         lookbehind: true,
         alias: 'purple',
         greedy: true  
