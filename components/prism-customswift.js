@@ -11,7 +11,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     "cust-swift-pink": {
-        pattern: /import|struct|var|private|some|true|false|if|else|func|return|guard|let|do|self|catch|init|for|@main/,
+        pattern: /import|struct|var|private|some|true|false|if|else|func|return|guard|let |do|self|catch|init|for|@main|class/,
         lookbehind: true,
         alias: 'pink',
         greedy: true
@@ -53,7 +53,7 @@ Prism.languages.customswift = {
         greedy: true  
     },
     "cust-swift-white": {
-        pattern: /[:.=,\{\}\(\)\[\]]|SwiftUI|SwiftData|\\\.|(?<=let\s+)\w+(?=\s*=)|(?<=\()(sight\.name|sight|container|destination\.name|destination|searchString)(?=\))|(?<=\{ )\w+(?= in)|(?<=:\s*)(config|example|destination)(?=\))|(?<=Text\()destination\.date|\bsearchString(?=\.isEmpty)|$0|\[(sort|index)\]|for\s+(\w+)\s+in\s+(\w+)\s*\{|(?<=\= )name/,
+        pattern: /[:.=,\{\}\(\)\[\]]|SwiftUI|Foundation|SwiftData|\\\.|(?<=let\s+)\w+(?=\s*=)|(?<=\()(sight\.name|sight|container|destination\.name|destination|searchString)(?=\))|(?<=\{ )\w+(?= in)|(?<=:\s*)(config|example|destination)(?=\))|(?<=Text\()destination\.date|\bsearchString(?=\.isEmpty)|$0|\[(sort|index)\]|for\s+(\w+)\s+in\s+(\w+)\s*\{|(?<=\= )name/,
         lookbehind: true,
         alias: 'dark-yellow',
         greedy: true  
