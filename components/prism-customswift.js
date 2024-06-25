@@ -5,7 +5,7 @@ Prism.languages.customswift = {
 		greedy: true
 	},
     "cust-swift-light-purple": {
-        pattern: /@Bindable|@State|@Environment|(?<!.)View(?!.)|destination|String|Date|Int|Form|TextField|DatePicker|Section|Picker|(?<!.)Text(?!.)|ForEach|HStack|VStack|Button|ModelConfiguration|ModelContainer|(?<!.)List(?!.)|NavigationLink|Query|NavigationStack|Menu|WindowGroup|App|Scene|SortDescriptor|(?<=\[)(Destination|Friends)(?=\])|(?<=<)(Destination|Friends)(?=>)/,
+        pattern: /@Bindable|@State|@Environment|(?<!.)View(?!.)|destination|String|Date|Int|Form|TextField|DatePicker|Section|Picker|\sText|ForEach|HStack|VStack|Button|ModelConfiguration|ModelContainer|(?<!.)List(?!.)|NavigationLink|Query|NavigationStack|Menu|WindowGroup|App|Scene|SortDescriptor|(?<=\[)(Destination|Friends)(?=\])|(?<=<)(Destination|Friends)(?=>)/,
         lookbehind: true,
         alias: 'light-purple',
         greedy: true
@@ -41,7 +41,7 @@ Prism.languages.customswift = {
         greedy: true 
     },
     "cust-swift-light-green": {
-        pattern: /\bDestination|EditDestinationView|DestinationListingView|ContentView\b|\bDestination(?=\.)|(?<=\[)Sight(?=\])/,
+        pattern: /\b(Destination|EditDestinationView|DestinationListingView|ContentView)\b|\bDestination(?=\.)|(?<=\[)Sight(?=\])/,
         lookbehind: true,
         alias: 'light-green',
         greedy: true 
