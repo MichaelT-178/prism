@@ -41,7 +41,7 @@ Prism.languages.customswift = {
         greedy: true 
     },
     "cust-swift-light-green": {
-        pattern: /\b(Destination|EditDestinationView|DestinationListingView|ContentView)\b|\bDestination(?=\.)|(?<=\[)Sight(?=\])/,
+        pattern: /Destination|EditDestinationView|DestinationListingView|ContentView|\bDestination(?=\.)|(?<=\[)Sight(?=\])/,
         lookbehind: true,
         alias: 'light-green',
         greedy: true 
