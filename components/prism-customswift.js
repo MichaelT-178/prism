@@ -17,7 +17,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     "cust-swift-purple": {
-        pattern: /(text|selection|isStoredInMemoryOnly|axis|action|(?<=\()for|searchable|navigationDestination|toolbar|configurations|order|sort|value|time alignment|perform|filter|path|systemImage|deleteRule)(?=:)|(?<=\.)(vertical|date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|#Preview|fatalError|@Query|#Predicate|localizedStandardContains|@Model|@Relationship|(?<=\\)modelContext|(?<=\.)name(?=\.)/,
+        pattern: /(text|selection|isStoredInMemoryOnly|axis|action|(?<=\()for|navigationDestination|configurations|order|sort|value|time alignment|perform|filter|path|systemImage|deleteRule)(?=:)|(?<=\.)(vertical|date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|#Preview|fatalError|@Query|#Predicate|searchable|toolbar|localizedStandardContains|@Model|@Relationship|(?<=\\)modelContext|(?<!\\)\.modelContext|(?<=\.)name(?=\.)/,
         lookbehind: true,
         alias: 'purple',
         greedy: true  
