@@ -5,49 +5,55 @@ Prism.languages.customswift = {
 		greedy: true
 	},
     "cust-swift-light-purple": {
-        pattern: /^@\S* $|TextField|Form|DatePicker|Section|HStack|ForEach|Button|Picker/,
+        pattern: /@Bindable|@State|@Environment|(?<=: )(View|destination|String|Date|Int)|View|Form|TextField|DatePicker|Section|Picker|Text|ForEach|HStack|VStack|Button|ModelConfiguration|ModelContainer|List|NavigationLink|Query|NavigationStack|Menu|WindowGroup|App|Scene|SortDescriptor|(?<=\[)(Destination|Friends)(?=\])|(?<=<)(Destination|Friends)(?=>)/,
         lookbehind: true,
         alias: 'light-purple',
         greedy: true
     },
     "cust-swift-pink": {
-        pattern: /import/,
+        pattern: /import|struct|var|private|some|in|true|false|if|else|func|return|guard|let|do|self|catch|init|for|in|@main/,
         lookbehind: true,
         alias: 'pink',
         greedy: true
     },
     "cust-swift-purple": {
-        pattern: /axis/,
+        pattern: /(text|selection|isStoredInMemoryOnly|axis|action|for|configurations|order|sort|value|date|time alignment|perform|filter|path|systemImage|deleteRule)(?=:)|(?<=\.)(name|vertical|date|tag|priority|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|#Preview|fatalError|@Query|#Predicate|localizedStandardContains|@Model|@Relationship|(?<=\\)modelContext|(?<=\.)name(?=\.)/,
         lookbehind: true,
         alias: 'purple',
         greedy: true  
     },
     "cust-swift-light-blue": {
-        pattern: /EditDestinationView/,
+        pattern: /(?<=struct\s)\w+(?=:)|(?<=class\s)\w+(?=\s*{)/,
         lookbehind: true,
         alias: 'light-blue',
         greedy: true 
     },
     "cust-swift-blue": {
-        pattern: /newSightName/,
+        pattern: /\b(destination|newSightName|body|sort)(?=:)|(?<=func\s)\w+(?=\s*\()|\bsearchString(?=:\s*String\b)|\bvar\s+(path|sortOrder|searchText|sights)\s*=/,
         lookbehind: true,
         alias: 'blue',
         greedy: true 
     },
     "cust-swift-green": {
-        pattern: /\$\destination/,
+        pattern: /$destination|$newSightName|addDestination|$path|$sortOrder|searchString|_destinations|destination|newSightName|deleteDestinations|(?<=\.)\b(details|sights|init)\b|\.name\)\"|\.name\)\"|\baddSight(?=\))|\b(name|details|sort)(?=:)|(?<=\()destinations(?=\))|(?<=\.)priority(?=,)|\bmodelContext(?=\.(delete|insert))|\b(destinations)(?=\[)|\b(sortOrder)(?=,)|(?<=Destination\.)(searchString|name|priority|date)|\bPath(?=\s+=)/,
         lookbehind: true,
         alias: 'green',
         greedy: true 
     },
     "cust-swift-light-green": {
-        pattern: /import/,
+        pattern: /\b(Destination|EditDestinationView|DestinationListingView|ContentView)(?=\()|\bDestination(?=\.)|(?<=\[)Sight(?=\])/,
         lookbehind: true,
         alias: 'light-green',
         greedy: true 
     },
     "cust-swift-dark-yellow": {
-        pattern: /1/,
+        pattern: /\b\d+\b/,
+        lookbehind: true,
+        alias: 'dark-yellow',
+        greedy: true  
+    },
+    "cust-swift-white": {
+        pattern: /[:.=,\{\}\(\)\[\]]|SwiftUI|SwiftData|\\\.|(?<=let\s+)\w+(?=\s*=)|(?<=\()(sight\.name|sight|container|destination\.name|destination|searchString)(?=\))|(?<=\{ )\w+(?= in)|(?<=:\s*)(config|example|destination)(?=\))|(?<=Text\()destination\.date|\bsearchString(?=\.isEmpty)|$0|\[(sort|index)\]|for\s+(\w+)\s+in\s+(\w+)\s*\{|(?<=\= )name/,
         lookbehind: true,
         alias: 'dark-yellow',
         greedy: true  
