@@ -29,7 +29,7 @@ Prism.languages.customswift = {
         greedy: true 
     },
     "cust-swift-blue": {
-        pattern: /\b(destination|newSightName|sort)(?=:)|body|\b(name|details|date|priority)(?=:)|(?<=func\s)\w+(?=\s*\()|\bsearchString(?=:\s*String\b)|\s+(path|sortOrder|searchText|sights)\s*(?==)|\s\b(modelContext)(?!\.)/,
+        pattern: /\b(destination|newSightName|sort)(?=:)|body|\b(name|details|date|priority)(?=:)|(?<=func\s)\w+(?=\s*\()|\bsearchString(?=:\s*String\b)|\s+(path)\s*(?==\[De)|\s+(sortOrder|searchText|sights)\s*(?==)|\s\b(modelContext)(?!\.)/,
         lookbehind: true,
         alias: 'blue',
         greedy: true 
@@ -90,13 +90,13 @@ Prism.languages.customswift = {
 		}
     ],
     'cust-swift-purple-other': {
-        pattern: /(?<=\()(for|destination)(?=:)|(?<=\\\.)modelContext|path(?=\:)/,
+        pattern: /(?<=\()for(?=:)|(?<=\\\.)modelContext|path(?=\:)|(systemImage|action|selection|destination|text)(?=:)/,
         lookbehind: true,
         alias: 'purple-other',
         greedy: true
     },
     'cust-swift-green-other': {
-        pattern: /name|details|date|priority|searchText(?=\))|for/,
+        pattern: /name|details|date|priority|searchText(?=\))/,
         lookbehind: true,
         alias: 'purple-other',
         greedy: true
