@@ -11,13 +11,13 @@ Prism.languages.customswift = {
         greedy: true
     },
     "cust-swift-pink": {
-        pattern: /import|struct|var|private|some|true|false|if|else|func|return|guard|let |do|(?<!\()for(?=\s)|\bin\b|self|catch|\sinit|@main|class/,
+        pattern: /import|struct|var|private|some|true|false|if|else|func|return|guard|try|let |do|(?<!\()for(?=\s)|\bin\b|self|catch|\sinit|@main|class/,
         lookbehind: true,
         alias: 'pink',
         greedy: true
     },
     "cust-swift-purple": {
-        pattern: /(text|selection|isStoredInMemoryOnly|axis|action|(?<=\()for|navigationDestination|configurations|order|sort|value|time alignment|perform|filter|path|systemImage)(?=:)|(?<=\.)(vertical|(?<!\.|d\()date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|#Preview|fatalError|@Query|#Predicate|searchable|navigationDestination|toolbar|localizedStandardContains|@Model|@Relationship|(?<=\\)modelContext|(?<!\\)\.modelContext|(?<=\.)name(?=\.)|deleteRule/,
+        pattern: /(text|selection|action|(?<=\()for|navigationDestination|configurations|order|sort|value|time alignment|perform|filter|path|systemImage)(?=:)|(?<=\.)(vertical|(?<!\.|d\()date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|axis|#Preview|fatalError|@Query|#Predicate|searchable|time|navigationDestination|toolbar|localizedStandardContains|isStoredInMemoryOnly|@Model|@Relationship|(?<=\\)modelContext|(?<!\\)\.modelContext|(?<=\.)name(?=\.)|deleteRule/,
         lookbehind: true,
         alias: 'purple',
         greedy: true  
@@ -102,7 +102,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     'cust-swift-white-other': {
-        pattern: /searchString/,
+        pattern: /searchString|sort/,
         lookbehind: true,
         alias: 'purple-other',
         greedy: true
