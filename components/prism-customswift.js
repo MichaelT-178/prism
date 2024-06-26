@@ -1,35 +1,4 @@
 Prism.languages.customswift = {
-    'cust-swift-string': [
-		// https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html
-		{
-			pattern: RegExp(
-				/(^|[^"#])/.source
-				+ '(?:'
-				// single-line string
-				+ /"(?:\\(?:\((?:[^()]|\([^()]*\))*\)|\r\n|[^(])|[^\\\r\n"])*"/.source
-				+ '|'
-				// multi-line string
-				+ /"""(?:\\(?:\((?:[^()]|\([^()]*\))*\)|[^(])|[^\\"]|"(?!""))*"""/.source
-				+ ')'
-				+ /(?!["#])/.source
-			),
-			lookbehind: true,
-			greedy: true,
-			inside: {
-				'interpolation': {
-					pattern: /(\\\()(?:[^()]|\([^()]*\))*(?=\))/,
-					lookbehind: true,
-					inside: null // see below
-				},
-				'interpolation-punctuation': {
-					pattern: /^\)|\\\($/,
-					alias: 'punctuation'
-				},
-				'punctuation': /\\(?=[\r\n])/,
-				'swift-string': /[\s\S]+/
-			}
-		}
-    ],
     'cust-swift-comment': {
 		pattern: /(^|[^\\:])(?:\/\/.*|\/\*(?:[^/*]|\/(?!\*)|\*(?!\/)|\/\*(?:[^*]|\*(?!\/))*\*\/)*\*\/)/,
 		lookbehind: true,
@@ -48,7 +17,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     "cust-swift-purple": {
-        pattern: /(text|selection|isStoredInMemoryOnly|axis|action|(?<=\()for|navigationDestination|configurations|order|sort|value|time alignment|perform|filter|path|systemImage)(?=:)|(?<=\.)(vertical|date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|#Preview|fatalError|@Query|#Predicate|searchable|toolbar|localizedStandardContains|@Model|@Relationship|(?<=\\)modelContext|(?<!\\)\.modelContext|(?<=\.)name(?=\.)|deleteRule/,
+        pattern: /(text|selection|isStoredInMemoryOnly|axis|action|(?<=\()for|navigationDestination|configurations|order|sort|value|time alignment|perform|filter|path|systemImage)(?=:)|(?<=\.)(vertical|(?<!\.)date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|#Preview|fatalError|@Query|#Predicate|searchable|toolbar|localizedStandardContains|@Model|@Relationship|(?<=\\)modelContext|(?<!\\)\.modelContext|(?<=\.)name(?=\.)|deleteRule/,
         lookbehind: true,
         alias: 'purple',
         greedy: true  
@@ -89,6 +58,37 @@ Prism.languages.customswift = {
         alias: 'dark-yellow',
         greedy: true  
     },
+    'cust-swift-string': [
+		// https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html
+		{
+			pattern: RegExp(
+				/(^|[^"#])/.source
+				+ '(?:'
+				// single-line string
+				+ /"(?:\\(?:\((?:[^()]|\([^()]*\))*\)|\r\n|[^(])|[^\\\r\n"])*"/.source
+				+ '|'
+				// multi-line string
+				+ /"""(?:\\(?:\((?:[^()]|\([^()]*\))*\)|[^(])|[^\\"]|"(?!""))*"""/.source
+				+ ')'
+				+ /(?!["#])/.source
+			),
+			lookbehind: true,
+			greedy: true,
+			inside: {
+				'interpolation': {
+					pattern: /(\\\()(?:[^()]|\([^()]*\))*(?=\))/,
+					lookbehind: true,
+					inside: null // see below
+				},
+				'interpolation-punctuation': {
+					pattern: /^\)|\\\($/,
+					alias: 'punctuation'
+				},
+				'punctuation': /\\(?=[\r\n])/,
+				'swift-string': /[\s\S]+/
+			}
+		}
+    ],
     'cust-swift-purple-other': {
         pattern: /(?<=\()for(?=:)|(?<=\\\.)modelContext/,
         lookbehind: true,
