@@ -5,7 +5,7 @@ Prism.languages.customswift = {
 		greedy: true
 	},
     "cust-swift-light-purple": {
-        pattern: /@Bindable|@State|@Environment|\bView\b|String|\bDate\b|Int|Form|TextField|DatePicker|Section|Picker|\bText|ForEach|HStack|VStack|Button|ModelConfiguration|ModelContainer|(?<!.)List(?!.)|NavigationLink|Query|NavigationStack|Menu|WindowGroup|App|Scene|SortDescriptor|(?<=\[)(Destination|Friends)(?=\])|(?<=<)(Destination|Friends)(?=>)/,
+        pattern: /@Bindable|@State|@Environment|\bView\b|String|\bDate\b|Int|Form|TextField|DatePicker|Section|Picker|\bText|\bList|ForEach|HStack|VStack|Button|ModelConfiguration|ModelContainer|(?<!.)List(?!.)|NavigationLink|Query|NavigationStack|Menu|WindowGroup|App|Scene|SortDescriptor|(?<=\[)(Destination|Friends)(?=\])|(?<=<)(Destination|Friends)(?=>)/,
         lookbehind: true,
         alias: 'light-purple',
         greedy: true
@@ -90,7 +90,7 @@ Prism.languages.customswift = {
 		}
     ],
     'cust-swift-purple-other': {
-        pattern: /(?<=\()for(?=:)|(?<=\\\.)modelContext|path|systemImage|action|selection|text/,
+        pattern: /(?<=\()for(?=:)|(?<=\\\.)modelContext|path|systemImage|order|alignment|value|perform|action|selection|text/,
         lookbehind: true,
         alias: 'purple-other',
         greedy: true
