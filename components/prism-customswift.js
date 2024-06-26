@@ -11,7 +11,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     "cust-swift-pink": {
-        pattern: /import|struct|var|private|some|true|false|if|else|func|return|guard|let |do|(?<!\()for(?=\s)|\bin\b|self|catch|init|@main|class/,
+        pattern: /import|struct|var|private|some|true|false|if|else|func|return|guard|let |do|(?<!\()for(?=\s)|\bin\b|self|catch|\sinit|@main|class/,
         lookbehind: true,
         alias: 'pink',
         greedy: true
