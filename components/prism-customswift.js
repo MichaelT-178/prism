@@ -29,13 +29,13 @@ Prism.languages.customswift = {
         greedy: true 
     },
     "cust-swift-blue": {
-        pattern: /\b(newSightName|sort)(?=:)|body|\b(name|details|date|priority)(?=:)|(?<=func\s)\w+(?=\s*\()|\bsearchString(?=:\s*String\b)|\bsearchString(?=:)|(path)\s*(?==\s\[De)|\s+(sortOrder|searchText|sights)\s*(?==)|\s\b(modelContext)(?!\.)/,
+        pattern: /\b(newSightName|sort)(?=:)|body|\b(name|details|date|priority)(?=:)|(?<=func\s)\w+(?=\s*\()|\bsearchString(?=:\s*String\b)|(path)\s*(?==\s\[De)|\s+(sortOrder|searchText|sights)\s*(?==)|\s\b(modelContext)(?!\.)/,
         lookbehind: true,
         alias: 'blue',
         greedy: true 
     },
     "cust-swift-green": {
-        pattern: /\$destination|(?<!\=\s)(name|details|date|priority)|\$newSightName|\$searchText|addDestination|\$path|\$sortOrder|_destinations|newSightName|deleteDestinations|(?<=\.)\b(details|sights|init)\b|\.name\)\"|\.name\)\"|\baddSight(?=\))|\b(name|details|sort)(?=:)|(?<=\()destinations(?=\))|(?<=\.)priority(?=,)|\bmodelContext(?=\.(delete|insert))|\b(destinations)(?=\[)|\b(sortOrder)(?=,)|(?<=Destination\.)(searchString|name|priority|date)|\bPath(?=\s+=)/,
+        pattern: /\$destination|(?<!\=\s)(name|details|date|priority)|\$newSightName|\$searchText|addDestination|\$path|\$sortOrder|\bsearchString(?=:)|_destinations|newSightName|deleteDestinations|(?<=\.)\b(details|sights|init)\b|\.name\)\"|\.name\)\"|\baddSight(?=\))|\b(name|details|sort)(?=:)|(?<=\()destinations(?=\))|(?<=\.)priority(?=,)|\bmodelContext(?=\.(delete|insert))|\b(destinations)(?=\[)|\b(sortOrder)(?=,)|(?<=Destination\.)(searchString|name|priority|date)|\bPath(?=\s+=)/,
         lookbehind: true,
         alias: 'green',
         greedy: true 
