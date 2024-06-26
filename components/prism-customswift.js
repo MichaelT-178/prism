@@ -90,7 +90,7 @@ Prism.languages.customswift = {
 		}
     ],
     'cust-swift-purple-other': {
-        pattern: /(?<=\()for(?=:)|(?<=\\\.)modelContext|path(?=\:)/,
+        pattern: /(?<=tainer\()for(?=:)|(?<=\\\.)modelContext|path(?=\:)/,
         lookbehind: true,
         alias: 'purple-other',
         greedy: true
