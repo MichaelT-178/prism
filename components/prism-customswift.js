@@ -96,7 +96,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     'cust-swift-green-other': {
-        pattern: /(?<!\=\s)(name|details|date|priority)/,
+        pattern: /name|details|date|priority/,
         lookbehind: true,
         alias: 'purple-other',
         greedy: true
