@@ -94,5 +94,11 @@ Prism.languages.customswift = {
         lookbehind: true,
         alias: 'purple-other',
         greedy: true
+    },
+    'cust-swift-green-other': {
+        pattern: /(?<=\()for(?=:)|(?<=\\\.)modelContext/,
+        lookbehind: true,
+        alias: 'purple-other',
+        greedy: true
     }
 }
