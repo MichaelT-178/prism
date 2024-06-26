@@ -1,4 +1,35 @@
 Prism.languages.customswift = {
+    'cust-swift-string': [
+		// https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html
+		{
+			pattern: RegExp(
+				/(^|[^"#])/.source
+				+ '(?:'
+				// single-line string
+				+ /"(?:\\(?:\((?:[^()]|\([^()]*\))*\)|\r\n|[^(])|[^\\\r\n"])*"/.source
+				+ '|'
+				// multi-line string
+				+ /"""(?:\\(?:\((?:[^()]|\([^()]*\))*\)|[^(])|[^\\"]|"(?!""))*"""/.source
+				+ ')'
+				+ /(?!["#])/.source
+			),
+			lookbehind: true,
+			greedy: true,
+			inside: {
+				'interpolation': {
+					pattern: /(\\\()(?:[^()]|\([^()]*\))*(?=\))/,
+					lookbehind: true,
+					inside: null // see below
+				},
+				'interpolation-punctuation': {
+					pattern: /^\)|\\\($/,
+					alias: 'punctuation'
+				},
+				'punctuation': /\\(?=[\r\n])/,
+				'swift-string': /[\s\S]+/
+			}
+		}
+    ],
     'cust-swift-comment': {
 		pattern: /(^|[^\\:])(?:\/\/.*|\/\*(?:[^/*]|\/(?!\*)|\*(?!\/)|\/\*(?:[^*]|\*(?!\/))*\*\/)*\*\/)/,
 		lookbehind: true,
@@ -58,37 +89,6 @@ Prism.languages.customswift = {
         alias: 'dark-yellow',
         greedy: true  
     },
-    'cust-swift-string': [
-		// https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html
-		{
-			pattern: RegExp(
-				/(^|[^"#])/.source
-				+ '(?:'
-				// single-line string
-				+ /"(?:\\(?:\((?:[^()]|\([^()]*\))*\)|\r\n|[^(])|[^\\\r\n"])*"/.source
-				+ '|'
-				// multi-line string
-				+ /"""(?:\\(?:\((?:[^()]|\([^()]*\))*\)|[^(])|[^\\"]|"(?!""))*"""/.source
-				+ ')'
-				+ /(?!["#])/.source
-			),
-			lookbehind: true,
-			greedy: true,
-			inside: {
-				'interpolation': {
-					pattern: /(\\\()(?:[^()]|\([^()]*\))*(?=\))/,
-					lookbehind: true,
-					inside: null // see below
-				},
-				'interpolation-punctuation': {
-					pattern: /^\)|\\\($/,
-					alias: 'punctuation'
-				},
-				'punctuation': /\\(?=[\r\n])/,
-				'swift-string': /[\s\S]+/
-			}
-		}
-    ],
     'cust-swift-purple-other': {
         pattern: /(?<=\()for(?=:)|(?<=\\\.)modelContext/,
         lookbehind: true,
