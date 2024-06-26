@@ -17,7 +17,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     "cust-swift-purple": {
-        pattern: /(text|selection|isStoredInMemoryOnly|axis|action|(?<=\()for|navigationDestination|configurations|order|sort|value|time alignment|perform|filter|path|systemImage)(?=:)|(?<=\.)(vertical|(?<!\.)date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|#Preview|fatalError|@Query|#Predicate|searchable|toolbar|localizedStandardContains|@Model|@Relationship|(?<=\\)modelContext|(?<!\\)\.modelContext|(?<=\.)name(?=\.)|deleteRule/,
+        pattern: /(text|selection|isStoredInMemoryOnly|axis|action|(?<=\()for|navigationDestination|configurations|order|sort|value|time alignment|perform|filter|path|systemImage)(?=:)|(?<=\.)(vertical|(?<!\.)date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|#Preview|fatalError|@Query|#Predicate|searchable|navigationDestination|toolbar|localizedStandardContains|@Model|@Relationship|(?<=\\)modelContext|(?<!\\)\.modelContext|(?<=\.)name(?=\.)|deleteRule/,
         lookbehind: true,
         alias: 'purple',
         greedy: true  
@@ -90,7 +90,7 @@ Prism.languages.customswift = {
 		}
     ],
     'cust-swift-purple-other': {
-        pattern: /(?<=tainer\()for(?=:)|(?<=\\\.)modelContext|path(?=\:)/,
+        pattern: /(?<=\()(for|destination)(?=:)|(?<=\\\.)modelContext|path(?=\:)/,
         lookbehind: true,
         alias: 'purple-other',
         greedy: true
