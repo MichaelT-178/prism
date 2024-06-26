@@ -29,7 +29,7 @@ Prism.languages.customswift = {
         greedy: true 
     },
     "cust-swift-blue": {
-        pattern: /\b(newSightName|sort)(?=:)|body|\b(name|details|date|priority)(?=:)|(?<=func\s)\w+(?=\s*\()|\bsearchString(?=:\s*String\b)|(path)\s*(?==\s\[De)|\s+(sortOrder|searchText|sights)\s*(?==)|\s\b(modelContext)(?!\.)/,
+        pattern: /\b(newSightName|sort)(?=:)|body|\b(name|details|date|priority)(?=:)|(?<=func\s)\w+(?=\s*\()|\bsearchString(?=:\s*String\b)|\bsearchString(?=:)|(path)\s*(?==\s\[De)|\s+(sortOrder|searchText|sights)\s*(?==)|\s\b(modelContext)(?!\.)/,
         lookbehind: true,
         alias: 'blue',
         greedy: true 
@@ -53,7 +53,7 @@ Prism.languages.customswift = {
         greedy: true  
     },
     "cust-swift-white": {
-        pattern: /[:.=,\{\}\(\)\[\]\\<>]|SwiftUI|\sindex\s|\sindexSet\s|Foundation|SwiftData|\\\.|(?<=let\s+)\w+(?=\s*=)|(?<=\()(sight\.name|sight|container|destination\.name|searchString)(?=\))|(?<=\{ )\w+(?= in)|(?<=:\s*)(config|example)(?=\))|(?<=Text\()destination\.date|\bsearchString(?=\.isEmpty)|\$0|\[(sort|index)\]|for\s+(\w+)\s+in\s+(\w+)\s*\{|(?<=\= )(name|details|date|priority)/,
+        pattern: /[:.=,\{\}\(\)\[\]\\<>]|SwiftUI|\sindex\s|\sindexSet\s|Foundation|SwiftData|\\\.|(?<=let\s+)\w+(?=\s*=)|(?<=\()(sight\.name|sight|container|destination\.name|searchString)(?=\))|(?<=\{ )\w+(?= in)|(?<=:\s*)(config|example)(?=\))|(?<=Text\()destination\.date|searchString|\$0|\[(sort|index)\]|for\s+(\w+)\s+in\s+(\w+)\s*\{|(?<=\= )(name|details|date|priority)/,
         lookbehind: true,
         alias: 'dark-yellow',
         greedy: true  
