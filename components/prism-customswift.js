@@ -17,7 +17,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     "cust-swift-purple": {
-        pattern: /(text|selection|action|(?<=\()for|navigationDestination|configurations|order|sort|value|time alignment|perform|filter|path|systemImage)(?=:)|(?<=\.)(vertical|(?<!\.|d\()date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|axis|#Preview|fatalError|@Query|#Predicate|searchable|time|navigationDestination|toolbar|localizedStandardContains|isStoredInMemoryOnly|@Model|@Relationship|(?<=\\)modelContext|(?<!\\)\.modelContext|(?<=\.)name(?=\.)|deleteRule/,
+        pattern: /(text|selection|action|(?<=\()for|navigationDestination|configurations|order|sort|value|time alignment|perform|filter|\bpath(?!\s=\s\[)|systemImage)(?=:)|(?<=\.)(vertical|(?<!\.|d\()date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|axis|#Preview|fatalError|@Query|#Predicate|searchable|time|navigationDestination|toolbar|localizedStandardContains|isStoredInMemoryOnly|@Model|@Relationship|(?<=\\)modelContext|(?<!\\)\.modelContext|(?<=\.)name(?=\.)|deleteRule/,
         lookbehind: true,
         alias: 'purple',
         greedy: true  
@@ -98,19 +98,19 @@ Prism.languages.customswift = {
     'cust-swift-light-purple-other': {
         pattern: /\bDestination(?=\]\(\))/,
         lookbehind: true,
-        alias: 'purple-other',
+        alias: 'light-purple-other',
         greedy: true
     },
     'cust-swift-green-other': {
         pattern: /name|details|date|priority|searchText(?=\))/,
         lookbehind: true,
-        alias: 'purple-other',
+        alias: 'green-other',
         greedy: true
     },
     'cust-swift-white-other': {
-        pattern: /searchString|sort/,
+        pattern: /searchString|sort|destination/,
         lookbehind: true,
-        alias: 'purple-other',
+        alias: 'white-other',
         greedy: true
     }
 }
