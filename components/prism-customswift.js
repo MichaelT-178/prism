@@ -29,13 +29,13 @@ Prism.languages.customswift = {
         greedy: true 
     },
     "cust-swift-blue": {
-        pattern: /\b(newSightName|sort)(?=:)|body|(?<=\bvar\s)\b(name|details|date|priority)(?=:)|(?<=func\s)\w+(?=\s*\()|\bsearchString(?=:\s*String\b)|(?<=\bvar\s)newSightName|(path)\s*(?==\s\[De)|\s+(sortOrder|searchText|sights)\s*(?==)|\s\b(modelContext)(?!\.)/,
+        pattern: /\b(newSightName|sort)(?=:)|body|(?<=\bvar\s)\b(name|details|date|priority)(?=:)|(?<=func\s)\w+(?=\s*\()|\bsearchString(?=:\s*String\b)|(?<=\bvar\s)newSightName|(path)\s*(?==\s\[De)|\s+(sortOrder|searchText|sights)\s*(?==)|\s\b(modelContext)(?!\.)|(?<=\bvar\s)(destination|destinations)(?=:)/,
         lookbehind: true,
         alias: 'blue',
         greedy: true 
     },
     "cust-swift-green": {
-        pattern: /\$destination|(?<!\=\s)(name|details|date|priority)|\$newSightName|newSightName|\$searchText|addDestination|\$path|\$sortOrder|\bsearchString(?=:)|_destinations|deleteDestinations|(?<=\.)\b(details|sights|init)\b|\.name\)\"|\.name\)\"|\baddSight(?=\))|\b(name|details|sort)(?=:)|(?<=\()destinations(?=\))|(?<=\.)priority(?=,)|\bmodelContext(?=\.(delete|insert))|\b(destinations)(?=\[)|\b(sortOrder)(?=,)|(?<=Destination\.)(searchString|name|priority|date)|\bPath(?=\s+=)/,
+        pattern: /\$destination|(?<!\=\s)(name|details|date|priority)|\$newSightName|newSightName|\$searchText|addDestination|\$path|\$sortOrder|\bsearchString(?=:)|_destinations|deleteDestinations|(?<=\.)\b(details|sights|init)\b|\.name\)\"|\.name\)\"|\baddSight(?=\))|\b(name|details|sort)(?=:)|(?<=\()destinations(?=\))|(?<=\.)priority(?=,)|\bmodelContext(?=\.(delete|insert))|\b(destinations)(?=\[)|\b(sortOrder)(?=,)|(?<=Destination\.)(searchString|name|priority|date)|\bPath(?=\s+=)|(?<=\()destination(?=:)|destination\.sights/,
         lookbehind: true,
         alias: 'green',
         greedy: true 
@@ -90,13 +90,13 @@ Prism.languages.customswift = {
 		}
     ],
     'cust-swift-purple-other': {
-        pattern: /(?<=\()for(?=:)|(?<=\\\.)modelContext|\bpath(?=:)|filter|formatted|systemImage|order|alignment|value|perform|action|selection|text/,
+        pattern: /(?<=\()for(?=:)|(?<=\\\.)modelContext|\bpath(?=:)|filter|formatted|systemImage|order|alignment|value|perform|action|selection|text|(?<!\bvar\s)destination(?=:)/,
         lookbehind: true,
         alias: 'purple-other',
         greedy: true
     },
     'cust-swift-light-purple-other': {
-        pattern: /\bDestination(?=\]\(\))/,
+        pattern: /\bDestination(?=\]\(\))|(?<=on: )Destination|(?<=:\s\[)Destination|IndexSet/,
         lookbehind: true,
         alias: 'light-purple-other',
         greedy: true
@@ -108,7 +108,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     'cust-swift-white-other': {
-        pattern: /searchString|sort|\((container)\)/,
+        pattern: /searchString|sort|(?<=\()destination(?=\))|(?<=\=\s\[)Destination|sight\.name|(?<=\()container(?=\))|(?<=\bvalue: )destination|(?<=\()destination\.name(?=\))|indexSet(?=:)|(?<=\[)index(?=\])/,
         lookbehind: true,
         alias: 'white-other',
         greedy: true
