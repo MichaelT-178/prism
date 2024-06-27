@@ -41,7 +41,7 @@ Prism.languages.customswift = {
         greedy: true 
     },
     "cust-swift-light-green": {
-        pattern: /\bEditDestinationView|\bDestinationListingView|\bDestination(?!])|\bContentView|(?<=\[)Sight(?=\])/,
+        pattern: /\bSight(?=\()|\bEditDestinationView|\bDestinationListingView|\bDestination(?!])|\bContentView|(?<=\[)Sight(?=\])/,
         lookbehind: true,
         alias: 'light-green',
         greedy: true 
@@ -108,7 +108,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     'cust-swift-white-other': {
-        pattern: /searchString|sort|destination/,
+        pattern: /searchString|sort/,
         lookbehind: true,
         alias: 'white-other',
         greedy: true
