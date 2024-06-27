@@ -17,7 +17,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     "cust-swift-purple": {
-        pattern: /(text|selection|action|(?<=\()for|navigationDestination|configurations|order|sort|value|time alignment|perform|filter|systemImage)(?=:)|(?<=\.)(vertical|(?<!\.|d\()date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|axis|#Preview|fatalError|@Query|#Predicate|searchable|time|navigationDestination|toolbar|localizedStandardContains|isStoredInMemoryOnly|@Model|@Relationship|(?<=\\)modelContext|(?<!\\)\.modelContext|(?<=\.)name(?=\.)|deleteRule/,
+        pattern: /(text|selection|action|(?<=\()for|navigationDestination|configurations|order|sort|value|time alignment|perform|filter|systemImage)(?=:)|(?<=\.)(vertical|(?<!\.|d\()date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|axis|#Preview|configurations|fatalError|@Query|#Predicate|searchable|time|navigationDestination|toolbar|localizedStandardContains|isStoredInMemoryOnly|@Model|@Relationship|(?<=\\)modelContext|(?<!\\)\.modelContext|(?<=\.)name(?=\.)|deleteRule/,
         lookbehind: true,
         alias: 'purple',
         greedy: true  
@@ -29,13 +29,13 @@ Prism.languages.customswift = {
         greedy: true 
     },
     "cust-swift-blue": {
-        pattern: /\b(newSightName|sort)(?=:)|body|\b(name|details|date|priority)(?=:)|(?<=func\s)\w+(?=\s*\()|\bsearchString(?=:\s*String\b)|(?<=\bvar\s)newSightName|(path)\s*(?==\s\[De)|\s+(sortOrder|searchText|sights)\s*(?==)|\s\b(modelContext)(?!\.)/,
+        pattern: /\b(newSightName|sort)(?=:)|body|(?<=\bvar\s)\b(name|details|date|priority)(?=:)|(?<=func\s)\w+(?=\s*\()|\bsearchString(?=:\s*String\b)|(?<=\bvar\s)newSightName|(path)\s*(?==\s\[De)|\s+(sortOrder|searchText|sights)\s*(?==)|\s\b(modelContext)(?!\.)/,
         lookbehind: true,
         alias: 'blue',
         greedy: true 
     },
     "cust-swift-green": {
-        pattern: /\$destination|(?<!\=\s)(name|details|date|priority)|\$newSightName|\$searchText|addDestination|\$path|\$sortOrder|\bsearchString(?=:)|_destinations|deleteDestinations|(?<=\.)\b(details|sights|init)\b|\.name\)\"|\.name\)\"|\baddSight(?=\))|\b(name|details|sort)(?=:)|(?<=\()destinations(?=\))|(?<=\.)priority(?=,)|\bmodelContext(?=\.(delete|insert))|\b(destinations)(?=\[)|\b(sortOrder)(?=,)|(?<=Destination\.)(searchString|name|priority|date)|\bPath(?=\s+=)/,
+        pattern: /\$destination|(?<!\=\s)(name|details|date|priority)|\$newSightName|newSightName|\$searchText|addDestination|\$path|\$sortOrder|\bsearchString(?=:)|_destinations|deleteDestinations|(?<=\.)\b(details|sights|init)\b|\.name\)\"|\.name\)\"|\baddSight(?=\))|\b(name|details|sort)(?=:)|(?<=\()destinations(?=\))|(?<=\.)priority(?=,)|\bmodelContext(?=\.(delete|insert))|\b(destinations)(?=\[)|\b(sortOrder)(?=,)|(?<=Destination\.)(searchString|name|priority|date)|\bPath(?=\s+=)/,
         lookbehind: true,
         alias: 'green',
         greedy: true 
