@@ -96,7 +96,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     'cust-swift-light-purple-other': {
-        pattern: / \bDestination(?=\]\(\))/,
+        pattern: /\bDestination(?=\]\(\))/,
         lookbehind: true,
         alias: 'purple-other',
         greedy: true
