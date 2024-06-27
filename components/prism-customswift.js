@@ -17,7 +17,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     "cust-swift-purple": {
-        pattern: /(text|selection|action|(?<=\()for|navigationDestination|configurations|order|sort|value|time alignment|perform|filter|systemImage)(?=:)|(?<=\.)(vertical|(?<!\.|d\()date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|axis|#Preview|configurations|fatalError|@Query|#Predicate|searchable|time|navigationDestination|toolbar|localizedStandardContains|isStoredInMemoryOnly|@Model|@Relationship|(?<=\\)modelContext|(?<!\\)\.modelContext|(?<=\.)name(?=\.)|deleteRule/,
+        pattern: /(text|selection|action|(?<=\()for|navigationDestination|order|sort|value|time alignment|perform|filter|systemImage)(?=:)|(?<=\.)(vertical|(?<!\.|d\()date|tag|segmented|pickerStyle|navigationTitle|navigationBarTitleDisplayMode|inline|isEmpty|append|modelContainer|reverse|leading|headline|font|fomatted|long|shortened|onDelete|delete|insert|now|cascade)|withAnimation|axis|#Preview|configurations|fatalError|@Query|#Predicate|searchable|time|navigationDestination|toolbar|localizedStandardContains|isStoredInMemoryOnly|@Model|@Relationship|(?<=\\)modelContext|configurations|(?<!\\)\.modelContext|(?<=\.)name(?=\.)|deleteRule/,
         lookbehind: true,
         alias: 'purple',
         greedy: true  
@@ -108,7 +108,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     'cust-swift-white-other': {
-        pattern: /searchString|sort/,
+        pattern: /searchString|sort|\((container)\)/,
         lookbehind: true,
         alias: 'white-other',
         greedy: true
