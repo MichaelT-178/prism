@@ -90,7 +90,7 @@ Prism.languages.customswift = {
 		}
     ],
     'cust-swift-purple-other': {
-        pattern: /(?<=\()for(?=:)|(?<=\\\.)modelContext|path|filter|formatted|systemImage|order|alignment|value|perform|action|selection|text/,
+        pattern: /(?<=\()for(?=:)|(?<=\\\.)modelContext|\bpath(?=:)|filter|formatted|systemImage|order|alignment|value|perform|action|selection|text/,
         lookbehind: true,
         alias: 'purple-other',
         greedy: true
@@ -102,7 +102,7 @@ Prism.languages.customswift = {
         greedy: true
     },
     'cust-swift-green-other': {
-        pattern: /name|details|date|priority|searchText(?=\))/,
+        pattern: /name|details|date|priority|searchText(?=\))|(path)\s*(?==\s\[de)/,
         lookbehind: true,
         alias: 'green-other',
         greedy: true
