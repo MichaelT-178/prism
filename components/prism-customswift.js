@@ -35,13 +35,13 @@ Prism.languages.customswift = {
         greedy: true 
     },
     "cust-swift-green": {
-        pattern: /\$destination|(?<!\=\s)(name|details|date|priority)|\$newSightName|newSightName|\$searchText|addDestination|\$path|\$sortOrder|\bsearchString(?=:)|_destinations|deleteDestinations|(?<=\.)\b(details|sights|init)\b|\.name\)\"|\.name\)\"|\baddSight(?=\))|\b(name|details|sort)(?=:)|(?<=\()destinations(?=\))|(?<=\.)priority(?=,)|\bmodelContext(?=\.(delete|insert))|\b(destinations)(?=\[)|\b(sortOrder)(?=,)|(?<=Destination\.)(searchString|name|priority|date|self)|\bPath(?=\s+=)|(?<=\()destination(?=:)|destination\.sights/,
+        pattern: /\$destination|(?<!\=\s)(name|details|date|priority)|\$newSightName|newSightName|\$searchText|addDestination|\$path|\$sortOrder|\bsearchString(?=:)|_destinations|deleteDestinations|(?<=\.)\b(details|sights|init)\b|\.name\)\"|\.name\)\"|\baddSight(?=\))|\b(name|details|sort)(?=:)|(?<=\()destinations(?=\))|(?<=\.)priority(?=,)|\bmodelContext(?=\.(delete|insert))|\b(destinations)(?=\[)|\b(sortOrder)(?=,)|(?<=Destination\.)(searchString|name|priority|date)|\bPath(?=\s+=)|(?<=\()destination(?=:)|destination\.sights/,
         lookbehind: true,
         alias: 'green',
         greedy: true 
     },
     "cust-swift-light-green": {
-        pattern: /\bSight(?=\()|\bEditDestinationView|\bDestinationListingView|(?<!: )\bDestination(?!\])|\bContentView|(?<=\[)Sight(?=\])/,
+        pattern: /\bSight(?=\()|\bEditDestinationView|\bDestinationListingView|(?<!: )\bDestination(?!\])|\bContentView|Destination(?=\.self)|(?<=\[)Sight(?=\])/,
         lookbehind: true,
         alias: 'light-green',
         greedy: true 
