@@ -12,7 +12,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'red-js': {
-		pattern: /(?<=\.)\b(?:baseURL|defaults|common|headers|lastname|firstname|value|data)\b|input|table|thead|(?<=<|\/)tr|(?<=<|\/)th|(?<=<|\/)td|tbody|base(?=:)|defineConfig|(?<=import\s)vue|(?<=import\s)react|AppRouter|buttonText(?=:)|template|router(?=;)|SecondPage(?=;)|(?<=\/)button|RouterBtn|path(?=:)|(?<= default) axios|style|router-link|router-view|createRouter|createWebHistory|component(?=:)|history|default|createApp|(?<!\()\bApp\b|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|(?<=import\s+)router|content|theme|extend|fontFamily|sans(?![\-])|plugins|React|HomePage|Router|Routes|Route|BrowserRouter|Link(?=\s\})|div|languages|customyaml|useState|(?<=<)button|(?<=\\)button|SecondPage(?=:)/,
+		pattern: /(?<=\.)\b(?:baseURL|defaults|common|headers|lastname|firstname|value|data)\b|input|table|thead|(?<=<|\/)tr|(?<=<|\/)th|(?<=<|\/)td|tbody|base(?=:)|defineConfig|(?<=import\s)vue|(?<=import\s)react|AppRouter|buttonText(?=:)|router(?=;)|SecondPage(?=;)|(?<=\/)button|RouterBtn|path(?=:)|(?<= default) axios|style|router-link|router-view|createRouter|createWebHistory|component(?=:)|history|default|createApp|(?<!\()\bApp\b|type|required|script|LinkBtn|Home(?=\s+from)|SecondPage(?=\s+from)|(?<=<)p|p(?=>)|(?<=import\s+)router|content|theme|extend|fontFamily|sans(?![\-])|plugins|React|HomePage|Router|Routes|Route|BrowserRouter|Link(?=\s\})|div|languages|customyaml|useState|(?<=<)button|(?<=\\)button|SecondPage(?=:)/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
