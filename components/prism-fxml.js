@@ -6,7 +6,7 @@ Prism.languages.fxml = {
 		greedy: true
     },
     "fxml-red": {
-        pattern: /VBox.margin|VBox|Label|Button|Insets|xml|import|DATABASE_URL|CLIENT_ID|CLIENT_SECRET|(?<!YOUR_)(?:USERNAME|PASSWORD)|USER_AGENT|SENDER_EMAIL|SENDER_PASSWORD|EMAIL_RECIPIENT|REFRESH_TOKEN|SPOTIFY_CLIENT_ID|SPOTIFY_CLIENT_SECRET|REDIRECT_URI|OPENAI_API_KEY|YOUTUBE_API_KEY|CHANNEL_ID|AUTH_CODE|DB_URL|DB_USERNAME|DB_PASSWORD/,
+        pattern: /VBox.margin|VBox|Label|Button|Insets|xml|import|DATABASE_URL|CLIENT_ID|CLIENT_SECRET|(?<!YOUR_|new_username )(USERNAME|PASSWORD)|USER_AGENT|SENDER_EMAIL|SENDER_PASSWORD|EMAIL_RECIPIENT|REFRESH_TOKEN|SPOTIFY_CLIENT_ID|SPOTIFY_CLIENT_SECRET|REDIRECT_URI|OPENAI_API_KEY|YOUTUBE_API_KEY|CHANNEL_ID|AUTH_CODE|DB_URL|DB_USERNAME|DB_PASSWORD/,
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
@@ -24,7 +24,7 @@ Prism.languages.fxml = {
 		greedy: true
     },
     'fxml-purple': {
-        pattern: /SELECT|DISTINCT|FROM|WHERE|(?<=SELECT )\*/,
+        pattern: /SELECT|DISTINCT|FROM|WHERE|CREATE|USER|GRANT|(?<!new_username\s)PASSWORD|GRANT|REVOKEN|ALL ON|TO|DROP USER|(?<=SELECT )\*/,
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
