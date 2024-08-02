@@ -24,7 +24,7 @@ Prism.languages.fxml = {
 		greedy: true
     },
     'fxml-purple': {
-        pattern: /SELECT|DISTINCT|FROM|WHERE|CREATE|USER|(?<=SELECT )\*/,
+        pattern: /\bSELECT\b|\bDISTINCT\b|\bFROM\b|\bWHERE\b|\bCREATE\b|\bUSER\b|(?<=SELECT )\*/,
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
