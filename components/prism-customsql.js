@@ -4,5 +4,11 @@ Prism.languages.customsql = {
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
+	},
+	"sql-green": {
+		pattern: /['"].*?['"]/,
+		lookbehind: true,
+		alias: 'red',
+		greedy: true
 	}
 }
