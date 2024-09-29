@@ -11,7 +11,7 @@ Prism.languages.customproperties = {
 		alias: 'green',
 		greedy: true
 	},
-    'comment': {
+    'prop-comment': {
 		pattern: /(^|[^\\])#.*/,
 		lookbehind: true,
 		greedy: true
