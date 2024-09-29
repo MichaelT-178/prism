@@ -10,5 +10,10 @@ Prism.languages.customproperties = {
 		lookbehind: true,
 		alias: 'green',
 		greedy: true
+	},
+    'comment': {
+		pattern: /(^|[^\\])#.*/,
+		lookbehind: true,
+		greedy: true
 	}
 }
