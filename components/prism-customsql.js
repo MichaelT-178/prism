@@ -10,5 +10,10 @@ Prism.languages.customsql = {
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
+	},
+	"sql-comment": {
+		pattern: /(--.*?$|\/\*[\s\S]*?\*\/)/m,
+		greedy: true,
+		alias: 'comment'
 	}
-}
+};
