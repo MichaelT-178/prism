@@ -30,7 +30,7 @@
 
 	Prism.languages.yaml = {
 		'string-after-hyphen': {
-			pattern: /-\s*echo.*\r?\n(?:[ \t]+echo.*(?:\r?\n)?)+/,
+			pattern: /-\s*(.*)/,
 			alias: 'string'
 		},
 		'scalar': {
