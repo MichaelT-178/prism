@@ -29,6 +29,10 @@
 	}
 
 	Prism.languages.yaml = {
+		'string-after-hyphen': {
+			pattern: /-\s*(\S+)/,
+			alias: 'string'
+		},
 		'scalar': {
 			pattern: RegExp(/([\-:]\s*(?:\s<<prop>>[ \t]+)?[|>])[ \t]*(?:((?:\r?\n|\r)[ \t]+)\S[^\r\n]*(?:\2[^\r\n]+)*)/.source
 				.replace(/<<prop>>/g, function () { return properties; })),
