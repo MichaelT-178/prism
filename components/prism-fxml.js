@@ -12,7 +12,7 @@ Prism.languages.fxml = {
 		greedy: true
     },
     "fxml-gray": {
-        pattern: /(<\? \?>|=|\<|\>|\/>)|javafx\.geometry\.Insets|javafx\.scene\.control\.*|javafx\.scene\.layout\.*|>(?= 2005)|,(?= Year)|(?<=2005);|Maker|Year|Cars/,
+        pattern: /(<\? \?>|=|\<|\>|\/>)|javafx\.geometry\.Insets|javafx\.scene\.control\.*|javafx\.scene\.layout\.*|>(?= 2005)|,(?= Year)|(?<=2005);|Maker|Year|Cars|# DB_ENV can be default, test, or production/,
 		lookbehind: true,
 		alias: 'white',
 		greedy: true
