@@ -17,7 +17,7 @@ git clone https://github.com/MichaelT-178/prism.git
 
 3. Set the value of the "path_to_local_project" variable to the path of the folder where you're using this forked prism repo.
 
-4. Run the following commands to add, commit, and push your syntax highlighting changes to the repo. It will also automatically update the prismjs package in your local npm project.
+4. Run the following commands to add, commit, and push your syntax highlighting changes to the repo. The script will also automatically update the prismjs package in your local npm project.
 
 ```
 cd prism
