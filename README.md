@@ -13,7 +13,7 @@ Do the following before pushing changes to this repo.
 git clone https://github.com/MichaelT-178/prism.git
 ```
 
-2. Open the [automate_project_update.py](https://github.com/MichaelT-178/prism/blob/master/automate_project_update.py) in your newly cloned folder.
+2. Open the [automate_project_update.py](https://github.com/MichaelT-178/prism/blob/master/automate_project_update.py) file in your newly cloned folder.
 
 3. Set the value of the "path_to_local_project" variable to the path of the folder where you're using this forked prism repo.
 
