@@ -7,18 +7,24 @@ I forked this repo to add syntax highlighting for certain languages.
 
 Do the following before pushing changes to this repo.
 
-1. Open the [automate_project_update.py](https://github.com/MichaelT-178/prism/blob/master/automate_project_update.py) in this project. 
+1. Clone this project.
 
-2. Set the value of the "path_to_local_project" variable to the path of the folder where you're using this forked prism repo.
+``` 
+git clone https://github.com/MichaelT-178/prism.git
+```
 
-3. Run the following commands to add, commit, and push your syntax highlighting changes to the repo. It will also automatically update the prismjs package in your local npm project.
+2. Open the [automate_project_update.py](https://github.com/MichaelT-178/prism/blob/master/automate_project_update.py) in your newly cloned folder.
+
+3. Set the value of the "path_to_local_project" variable to the path of the folder where you're using this forked prism repo.
+
+4. Run the following commands to add, commit, and push your syntax highlighting changes to the repo. It will also automatically update the prismjs package in your local npm project.
 
 ```
 cd prism
 python3 push_updates.py
 ```
 
-4. If you want to do this process without using a python script, see the "Push and Update Manually" section below.
+5. If you want to do this process without using a python script, see the "Push and Update Manually" section below.
 
 
 ## How To Add a Token
