@@ -5,7 +5,7 @@ I forked this repo to add syntax highlighting for certain languages.
 
 ## Setup
 
-Do the following before pushing your changes to this repo.
+Do the following before pushing changes to this repo.
 
 1. Open the [automate_project_update.py](https://github.com/MichaelT-178/prism/blob/master/automate_project_update.py) in this project. 
 
