@@ -26,6 +26,13 @@ python3 push_updates.py
 
 5. If you want to do this process without using a python script, see the "Push and Update Manually" section below.
 
+6. Go to your local npm project and add the forked prismjs library as a dependency.
+
+```
+cd your-project
+npm install prismjs@github:MichaelT-178/prism --save
+```
+
 
 ## How To Add a Token
 
