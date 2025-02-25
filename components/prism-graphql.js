@@ -23,7 +23,7 @@ Prism.languages.graphql = {
 		pattern: /@[a-z_]\w*/i,
 		alias: 'function'
 	},
-	'attr-name': {
+	'doctype-tag': { //was attr-name
 		pattern: /\b[a-z_]\w*(?=\s*(?:\((?:[^()"]|"(?:\\.|[^\\"\r\n])*")*\))?:)/i,
 		greedy: true
 	},
