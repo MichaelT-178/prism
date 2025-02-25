@@ -58,7 +58,7 @@ Prism.languages.graphql = {
 	'property-query': /\w+(?=\s*\()/,
 	'object': /\w+(?=\s*\{)/,
 	'punctuation': /[!(){}\[\]:=,]/,
-	'property': /\w+/
+	'file-name': /\w+/ //was property
 };
 
 Prism.hooks.add('after-tokenize', function afterTokenizeGraphql(env) {
