@@ -25,7 +25,7 @@ Prism.languages.graphql = {
 	},
 	'doctype-tag': { //was attr-name
 		// pattern: /\b[a-z_]\w*(?=\s*(?:\((?:[^()"]|"(?:\\.|[^\\"\r\n])*")*\))?:)/i,
-		pattern: /\b[a-z_]\w*(?=\s*\()/i,
+		pattern: /\b[a-z_]\w*(?=\s*:)/i,
 		greedy: true
 	},
 	'atom-input': {
