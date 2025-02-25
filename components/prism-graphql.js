@@ -24,16 +24,17 @@ Prism.languages.graphql = {
 		alias: 'function'
 	},
 	'doctype-tag': { //was attr-name
-		pattern: /\b[a-z_]\w*(?=\s*(?:\((?:[^()"]|"(?:\\.|[^\\"\r\n])*")*\))?:)/i,
+		// pattern: /\b[a-z_]\w*(?=\s*(?:\((?:[^()"]|"(?:\\.|[^\\"\r\n])*")*\))?:)/i,
+		pattern: /\b[a-z_]\w*(?=\s*\()/i,
 		greedy: true
 	},
 	'atom-input': {
 		pattern: /\b[A-Z]\w*Input\b/,
-		alias: 'class-name'
+		alias: 'fxml-teal' //was class-name
 	},
 	'scalar': /\b(?:Boolean|Float|ID|Int|String)\b/,
 	'constant': /\b[A-Z][A-Z_\d]*\b/,
-	'class-name': {
+	'fxml-teal': { //was class-name
 		pattern: /(\b(?:enum|implements|interface|on|scalar|type|union)\s+|&\s*|:\s*|\[)[A-Z_]\w*/,
 		lookbehind: true
 	},
