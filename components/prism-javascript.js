@@ -48,7 +48,7 @@ Prism.languages.javascript = Prism.languages.extend('clike', {
 		greedy: true
 	},
 	'purple-js': {
-		pattern: /=(?=>)|(?<==)>|@tailwind|v-if|(?<=user )in|v-for/,
+		pattern: /=(?=>)|(?<==)>|@tailwind|@import|v-if|(?<=user )in|v-for/,
 		lookbehind: true,
 		alias: 'red',
 		greedy: true
